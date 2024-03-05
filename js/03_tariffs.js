@@ -1,5 +1,7 @@
 const tariffsList=[];
 
+// ------------- SHOW LIST OF TARIFFS --------------------------
+
 const showListTariffs=async()=>{
     await loadJson("tariffs", tariffsList, "TARIFFS");
     const listTariffs=document.getElementById("show-info");

@@ -1,5 +1,7 @@
 const programsList=[];
 
+// ------------- SHOW LIST OF PROGRAMS --------------------------
+
 const showListPrograms=async()=>{
     await loadJson("programs", programsList, "PROGRAMS");
     const listPrograms=document.getElementById("show-info");

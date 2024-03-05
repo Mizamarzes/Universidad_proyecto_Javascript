@@ -1,5 +1,8 @@
 const salonsList=[];
 
+
+// ------------- SHOW LIST OF SALONS --------------------------
+
 const showListSalons=async()=>{
     await loadJson("salons", salonsList, "SALONS");
     const listSalons=document.getElementById("show-info");

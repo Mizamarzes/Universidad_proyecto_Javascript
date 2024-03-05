@@ -1,5 +1,8 @@
 const periodsList=[];
 
+
+// ------------- SHOW LIST OF PERIODS --------------------------
+
 const showListPeriods=async()=>{
     await loadJson("periods", periodsList, "PROGRAMS");
     const listPeriods=document.getElementById("show-info");

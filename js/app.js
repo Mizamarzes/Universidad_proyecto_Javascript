@@ -14,4 +14,16 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
     // SALONS
     await loadJson("salons", salonsList, "SALONS");
+
+    // STUDENTS
+    await loadJson("students", studentsList, "STUDENTS");
+
+    // TEACHERS
+    await loadJson("teachers", teachersList, "TEACHERS");
+
+    // ASIGNATURES
+    await loadJson("asignatures", asignaturesList, "ASIGNATURES");
+
+    // MATRICULATES
+    await loadJson("matriculates", matriculatesList, "MATRICULATES");
 })

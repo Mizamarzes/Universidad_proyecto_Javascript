@@ -1,179 +1,179 @@
 {
-    "periods":[
+  "periods": [
+    {
+      "id": "1",
+      "code": "P24-01",
+      "year": 2024,
+      "semester": 1
+    }
+  ],
+  "programs": [
+    {
+      "id": "1",
+      "name": "Systems Engineering",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "2",
+      "name": "Mechatronics Engineering",
+      "level": "Undergraduate"
+    }
+  ],
+  "tariffs": [
+    {
+      "id": "1",
+      "credit_cost": 1000,
+      "period_id": 1,
+      "program_id": 1
+    },
+    {
+      "id": "2",
+      "credit_cost": 1100,
+      "period_id": 1,
+      "program_id": 2
+    }
+  ],
+  "departments": [
+    {
+      "id": "1",
+      "name": "Information Technology Department"
+    },
+    {
+      "id": "2",
+      "name": "Mathematics Department"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "document_type": "CC",
+      "document_number": "13788555",
+      "name": "Juan",
+      "last_name": "Pérez",
+      "department_id": 1
+    },
+    {
+      "id": "2",
+      "document_type": "CC",
+      "document_number": "137880000",
+      "name": "María",
+      "last_name": "Gómez",
+      "department_id": 2
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Carlos",
+      "last_name": "Rodríguez",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Bogota",
+      "address": "Calle 123",
+      "phone_number": "1234567890",
+      "date_born": "1990-01-01",
+      "sex": "Male",
+      "program_id": 1
+    },
+    {
+      "id": "2",
+      "name": "Ana",
+      "last_name": "Martínez",
+      "document_type": "CE",
+      "document_number": "987654321",
+      "city_of_residence": "Medellín",
+      "address": "Carrera 456",
+      "phone_number": "0987654321",
+      "date_born": "1992-05-15",
+      "sex": "Female",
+      "program_id": 2
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Advanced Programming",
+      "code": "PROG-AVA",
+      "chair_guide": "URL_Chair_Guide.pdf"
+    },
+    {
+      "id": "2",
+      "name": "Linear Algebra",
+      "code": "ALG-LI",
+      "chair_guide": "URL_Chair_Guide.pdf"
+    }
+  ],
+  "salons": [
+    {
+      "id": "1",
+      "student_capacity": 30,
+      "building": "Building A",
+      "floor": 2,
+      "identification_number": "S001"
+    }
+  ],
+  "asignatures": [
+    {
+      "id": "1",
+      "course_id": 1,
+      "code": "PROG-AVA-PER-2024",
+      "credits": 4,
+      "teacher_id": 1,
+      "available_quotas": 20,
+      "program_id": 1,
+      "class_schedule": [
         {
-            "id": 1,
-            "code": "P24-01",
-            "year": 2024,
-            "semester": 1
-        }
-    ],
-    "programs":[
-        {
-            "id": 1,
-            "name": "Systems Engineering",
-            "level": "Undergraduate"
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 1
         },
         {
-            "id": 2,
-            "name": "Mechatronics Engineering",
-            "level": "Undergraduate"
+          "day": "Tuesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 1
         }
-    ],
-    "tariffs":[
+      ]
+    },
+    {
+      "id": "2",
+      "course_id": 2,
+      "code": "ALG-LI-PER-2024",
+      "credits": 3,
+      "teacher_id": 2,
+      "available_quotas": 15,
+      "program_id": 2,
+      "class_schedule": [
         {
-            "id": 1,
-            "credit_cost": 1000,
-            "period_id": 1,
-            "program_id": 1
+          "day": "Monday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 1
         },
         {
-            "id": 2,
-            "credit_cost": 1100,
-            "period_id": 1,
-            "program_id": 2
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 1
         }
-    ],
-    "departments":[
-        {
-            "id": 1,
-            "name": "Information Technology Department"
-        },
-        {
-            "id": 2,
-            "name": "Mathematics Department"
-        }
-    ],
-    "teachers":[
-        {
-            "id": 1,
-            "document_type": "CC",
-            "document_number": "13788555",
-            "name": "Juan",
-            "last_name": "Pérez",
-            "department_id": 1
-        },
-        {
-            "id": 2,
-            "document_type": "CC",
-            "document_number": "137880000",
-            "name": "María",
-            "last_name": "Gómez",
-            "department_id": 2
-        }
-    ],
-    "students":[
-        {
-            "id": 1,
-            "name": "Carlos",
-            "last_name": "Rodríguez",
-            "document_type": "CC",
-            "document_number": "123456789",
-            "city_of_residence": "Bogota",
-            "address": "Calle 123",
-            "phone_number": "1234567890",
-            "date_born": "1990-01-01",
-            "sex": "Male",
-            "program_id": 1
-        },
-        {
-            "id": 2,
-            "name": "Ana",
-            "last_name": "Martínez",
-            "document_type": "CE",
-            "document_number": "987654321",
-            "city_of_residence": "Medellín",
-            "address": "Carrera 456",
-            "phone_number": "0987654321",
-            "date_born": "1992-05-15",
-            "sex": "Female",
-            "program_id": 2
-        }
-    ],
-    "courses":[
-        {
-            "id": 1,
-            "name": "Advanced Programming",
-            "code": "PROG-AVA",
-            "chair_guide": "URL_Chair_Guide.pdf"
-        },
-        {
-            "id": 2,
-            "name": "Linear Algebra",
-            "code": "ALG-LI",
-            "chair_guide": "URL_Chair_Guide.pdf"
-        }
-    ],
-    "salons":[
-        {
-            "id": 1,
-            "student_capacity": 30,
-            "building": "Building A",
-            "floor": 2,
-            "identification_number": "S001"
-        }
-    ],
-    "asignatures":[
-        {
-            "id": 1,
-            "course_id": 1,
-            "code": "PROG-AVA-PER-2024",
-            "credits": 4,
-            "teacher_id": 1,
-            "available_quotas": 20,
-            "program_id": 1,
-            "class_schedule":[
-                {
-                    "day": "Monday",
-                    "start_time": "08:00",
-                    "end_time": "10:00",
-                    "salon_id": 1
-                },
-                {
-                    "day": "Tuesday",
-                    "start_time": "08:00",
-                    "end_time": "10:00",
-                    "salon_id": 1
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "course_id": 2,
-            "code": "ALG-LI-PER-2024",
-            "credits": 3,
-            "teacher_id": 2,
-            "available_quotas": 15,
-            "program_id": 2,
-            "class_schedule":[
-                {
-                    "day": "Monday",
-                    "start_time": "10:00",
-                    "end_time": "12:00",
-                    "salon_id": 1
-                },
-                {
-                    "day": "Thursday",
-                    "start_time": "10:00",
-                    "end_time": "12:00",
-                    "salon_id": 1
-                }
-            ] 
-        }
-    ],
-    "matriculates":[ 
-        {
-            "id": 1,
-            "student_id": 1,
-            "asignature_id": 1,
-            "period_id": 1,
-            "price": 4000
-        },
-        {
-            "id": 1,
-            "student_id": 1,
-            "asignature_id": 2,
-            "period_id": 1,
-            "price": 3300
-        }
-    ]
+      ]
+    }
+  ],
+  "matriculates": [
+    {
+      "id": "1",
+      "student_id": 1,
+      "asignature_id": 1,
+      "period_id": 1,
+      "price": 4000
+    },
+    {
+      "id": "1",
+      "student_id": 1,
+      "asignature_id": 2,
+      "period_id": 1,
+      "price": 3300
+    }
+  ]
 }

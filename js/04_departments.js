@@ -1,5 +1,7 @@
 const departmentsList=[];
 
+// ------------- SHOW LIST OF DEPARTMENTS --------------------------
+
 const showListDepartments=async()=>{
     await loadJson("departments", departmentsList, "DEPARTMENTS");
     const listDepartments=document.getElementById("show-info");
