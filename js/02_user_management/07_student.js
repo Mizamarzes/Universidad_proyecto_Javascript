@@ -8,26 +8,26 @@ const loadFormStudents=()=>{
         <form>
             <div class="mb-3">
                 <label for="nameStudentInput" class="form-label">Name</label>
-                <input type="email" class="form-control" id="nameStudentInput" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="nameStudentInput>
             </div>
 
             <div class="mb-3">
                 <label for="lastNameStudentInput" class="form-label">Last name</label>
-                <input type="password" class="form-control" id="lastNameStudentInput">
+                <input type="text" class="form-control" id="lastNameStudentInput">
             </div>
 
             <label for="textCheckDocumentTypeStudent" class="form-label">Document type</label>
             <div class="mb-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeRadioOptions" id="ccDocumentTypeStudentInput" value="C.C">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="ccDocumentTypeStudentInput" value="C.C">
                     <label class="form-check-label" for="ccDocumentTypeStudentInput">C.C</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeRadioOptions" id="tiDocumentTypeStudentInput" value="T.I">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="tiDocumentTypeStudentInput" value="T.I">
                     <label class="form-check-label" for="tiDocumentTypeStudentInput">T.I</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeRadioOptions" id="ceDocumentTypeStudentInput" value="C.E">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="ceDocumentTypeStudentInput" value="C.E">
                     <label class="form-check-label" for="ceDocumentTypeStudentInput">C.E</label>
                 </div>
             </div>
@@ -60,15 +60,15 @@ const loadFormStudents=()=>{
             <label for="textCheckSex" class="form-label">Sex</label>
             <div class="mb-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sexOptions" id="maleSexStudentInput" value="option1">
+                    <input class="form-check-input" type="radio" name="sexOptions" id="maleSexStudentInput" value="male">
                     <label class="form-check-label" for="maleSexStudentInput">Male</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sexOptions" id="femaleSexStudentInput" value="option2">
+                    <input class="form-check-input" type="radio" name="sexOptions" id="femaleSexStudentInput" value="female">
                     <label class="form-check-label" for="femaleSexStudentInput">Female</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="sexOptions" id="idkSexStudentInput" value="option3">
+                    <input class="form-check-input" type="radio" name="sexOptions" id="idkSexStudentInput" value="idk">
                     <label class="form-check-label" for="idkSexStudentInput">Idk</label>
                 </div>
             </div>
@@ -91,8 +91,8 @@ const createStudent=async()=>{
     const dateBornStudentInput=document.getElementById('dateBornStudentInput').value;
 
     // get the value about checkbox - document type
-    const optionsDocumentType=document.getElementsByName('documentTypeRadioOptions');
-    const documentTypeStudentInput= getCheckboxSelected(optionsDocumentType);
+    const optionsDocumentTypeStudent=document.getElementsByName('documentTypeOptionsStudent');
+    const documentTypeStudentInput= getCheckboxSelected(optionsDocumentTypeStudent);
 
     // get the value about checkbox - sex 
     const optionsSex=document.getElementsByName('sexOptions');
@@ -113,7 +113,7 @@ const createStudent=async()=>{
     }
 
     await saveJson("students", newStudent, "STUDENT");
-    await loadJson("students", studentsList, "STUDENTS")
+    await loadJson("students", studentsList, "STUDENTS");
     
     nameStudentInput.value='';
     lastNameStudentInput.value='';

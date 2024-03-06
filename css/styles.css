@@ -9,5 +9,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* ------------- HEADER NAVBAR ---------------- */
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 

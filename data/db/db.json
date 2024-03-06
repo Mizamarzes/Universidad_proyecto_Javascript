@@ -87,6 +87,19 @@
       "date_born": "1992-05-15",
       "sex": "Female",
       "program_id": 2
+    },
+    {
+      "id": 3,
+      "name": "juanito",
+      "last_name": "juanito contreras melendez",
+      "document_type": "C.C",
+      "document_number": "109819238912389",
+      "city_of_residence": "asdsadas",
+      "address": "asdasdsad",
+      "phone_number": "132421314",
+      "date_born": "14214-12-04",
+      "sex": "option1",
+      "program_id": 1
     }
   ],
   "courses": [

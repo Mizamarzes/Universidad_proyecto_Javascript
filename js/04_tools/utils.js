@@ -33,7 +33,7 @@ const saveJson= async(url, newItem, messageSecurity)=>{
             throw new Error(`Error creating a ${messageSecurity}, status: ${response.status}`);
         }
         const itemCreated= await response.json();
-        console.log(`Invoice created: ${itemCreated}`);
+        console.log(`${messageSecurity} created: ${itemCreated}`);
 
     }catch(error){
         console.error(`Error loading a ${messageSecurity}, ${error.message}`);

@@ -9,6 +9,7 @@
     <title>University of the Wise</title>
 </head>
 <body>
+  
     <!-- HEADER NAVBAR -->
     <header>
         <div class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,7 +21,7 @@
             <div class="collapse navbar-collapse" id="nav">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Show</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Information</a>
                   <ul class="dropdown-menu dropdown-menu-dark">
                     <li>
                       <a href="#" class="dropdown-item" onclick="showListPeriods()">Periods</a>
@@ -40,14 +41,19 @@
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Modify</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">User management</a>
                   <ul class="dropdown-menu dropdown-menu-dark">
                     <li>
                       <a href="#" class="dropdown-item" onclick="loadFormStudents()">Students</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-item" onclick="showListTeachers()">Teachers</a>
+                      <a href="#" class="dropdown-item" onclick="loadFormTeachers()">Teachers</a>
                     </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Academic management</a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
                     <li>
                       <a href="#" class="dropdown-item" onclick="showListAsignatures()">Asignatures</a>
                     </li>
@@ -56,42 +62,40 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
-                </li>
               </ul>
             </div>
           </div>
         </div>
     </header>
+   
     
     <!-- DIV FOR INFORMATION -->
     <main>
       <section id="show-section">
-        <div id="show-info"></div>
+        <div id="show-info">
+
+        </div>
       </section>
     </main>
 
-    
-    
+
     <!-- LINKS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- LINKS SCRIPTS JS  -->
-    <script src="js/01_periods.js"></script>
-    <script src="js/02_programs.js"></script>
-    <script src="js/03_tariffs.js"></script>
-    <script src="js/04_departments.js"></script>
-    <script src="js/05_salons.js"></script>
-    <script src="js/06_student.js"></script>
-    <script src="js/07_teachers.js"></script>
-    <script src="js/08_asignatures.js"></script>
-    <script src="js/09_matriculates.js"></script>
-    <script src="js/10_courses.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/utils.js"></script>
+    <script src="js/01_information/01_periods.js"></script>
+    <script src="js/01_information/02_programs.js"></script>
+    <script src="js/01_information/03_tariffs.js"></script>
+    <script src="js/01_information/04_departments.js"></script>
+    <script src="js/01_information/05_salons.js"></script>
+    <script src="js/01_information/06_courses.js"></script>
+    <script src="js/02_user_management/07_student.js"></script>
+    <script src="js/02_user_management/08_teachers.js"></script>
+    <script src="js/03_academic_management/09_asignatures.js"></script>
+    <script src="js/03_academic_management/10_matriculates.js"></script>
+    
+    <script src="js/04_tools/app.js"></script>
+    <script src="js/04_tools/utils.js"></script>
+
 </body>
 </html>
