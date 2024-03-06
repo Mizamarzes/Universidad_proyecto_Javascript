@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
     // STUDENTS
     await loadJson("students", studentsList, "STUDENTS");
-
+    
     // TEACHERS
     await loadJson("teachers", teachersList, "TEACHERS");
 
@@ -26,4 +26,5 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
     // MATRICULATES
     await loadJson("matriculates", matriculatesList, "MATRICULATES");
+
 })

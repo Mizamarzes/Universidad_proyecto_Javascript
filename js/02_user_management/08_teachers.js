@@ -19,15 +19,15 @@ const loadFormTeachers=()=>{
             <label for="textCheckDocumentTypeTeacher" class="form-label">Document type</label>
             <div class="mb-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeOptionsTeacher" id="ccDocumentTypeTeacherInput" value="C.C">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsTeacher" id="ccDocumentTypeTeacherInput" value="CC">
                     <label class="form-check-label" for="ccDocumentTypeTeacherInput">C.C</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeOptionsTeacher" id="tiDocumentTypeTeacherInput" value="T.I">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsTeacher" id="tiDocumentTypeTeacherInput" value="TI">
                     <label class="form-check-label" for="tiDocumentTypeTeacherInput">T.I</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeOptionsTeacher" id="ceDocumentTypeTeacherInput" value="C.E">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsTeacher" id="ceDocumentTypeTeacherInput" value="CE">
                     <label class="form-check-label" for="ceDocumentTypeTeacherInput">C.E</label>
                 </div>
             </div>

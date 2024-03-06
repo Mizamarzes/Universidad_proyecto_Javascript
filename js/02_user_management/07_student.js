@@ -8,7 +8,7 @@ const loadFormStudents=()=>{
         <form>
             <div class="mb-3">
                 <label for="nameStudentInput" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nameStudentInput>
+                <input type="text" class="form-control" id="nameStudentInput">
             </div>
 
             <div class="mb-3">
@@ -19,15 +19,15 @@ const loadFormStudents=()=>{
             <label for="textCheckDocumentTypeStudent" class="form-label">Document type</label>
             <div class="mb-3">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="ccDocumentTypeStudentInput" value="C.C">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="ccDocumentTypeStudentInput" value="CC">
                     <label class="form-check-label" for="ccDocumentTypeStudentInput">C.C</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="tiDocumentTypeStudentInput" value="T.I">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="tiDocumentTypeStudentInput" value="TI">
                     <label class="form-check-label" for="tiDocumentTypeStudentInput">T.I</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="ceDocumentTypeStudentInput" value="C.E">
+                    <input class="form-check-input" type="radio" name="documentTypeOptionsStudent" id="ceDocumentTypeStudentInput" value="CE">
                     <label class="form-check-label" for="ceDocumentTypeStudentInput">C.E</label>
                 </div>
             </div>
@@ -82,6 +82,7 @@ const loadFormStudents=()=>{
 // ------------- CREATE STUDENT --------------------------
 
 const createStudent=async()=>{
+    
     const nameStudentInput=document.getElementById('nameStudentInput').value;
     const lastNameStudentInput=document.getElementById('lastNameStudentInput').value;
     const documentNumberStudentInput=document.getElementById('documentNumberStudentInput').value;
@@ -127,7 +128,7 @@ const createStudent=async()=>{
     
     alert("Student succesfuly created");
 
-    return newStudent
+    return newStudent;
 }
 
 // ------------- SHOW LIST OF STUDENTS --------------------------
