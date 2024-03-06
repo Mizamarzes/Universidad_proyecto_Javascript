@@ -84,18 +84,19 @@ const loadFormStudents=()=>{
 const createStudent=async()=>{
     const nameStudentInput=document.getElementById('nameStudentInput').value;
     const lastNameStudentInput=document.getElementById('lastNameStudentInput').value;
-
-    // fix check box items document
-    const documentTypeStudentInput="without settings";
-
     const documentNumberStudentInput=document.getElementById('documentNumberStudentInput').value;
     const cityResidenceStudentInput=document.getElementById('cityResidenceStudentInput').value;
     const addressStudentInput=document.getElementById('addressStudentInput').value;
     const phoneNumberStudentInput=document.getElementById('phoneNumberStudentInput').value;
     const dateBornStudentInput=document.getElementById('dateBornStudentInput').value;
 
-    // fix check box items sex
-    const sexStudentInput="without settings";
+    // get the value about checkbox - document type
+    const optionsDocumentType=document.getElementsByName('documentTypeRadioOptions');
+    const documentTypeStudentInput= getCheckboxSelected(optionsDocumentType);
+
+    // get the value about checkbox - sex 
+    const optionsSex=document.getElementsByName('sexOptions');
+    const sexStudentInput= getCheckboxSelected(optionsSex);
 
     const newStudent={
         id: studentsList.length+1,

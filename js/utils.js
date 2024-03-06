@@ -39,3 +39,20 @@ const saveJson= async(url, newItem, messageSecurity)=>{
         console.error(`Error loading a ${messageSecurity}, ${error.message}`);
     }
 }
+
+// ------------- DIFFERENTS FUNCTION UTILS --------------------------
+
+// ------------- GET THE CHECKBOX SELECTED --------------------------
+
+function getCheckboxSelected(nameCheckbox){
+    let selectedValue=null;
+
+    for (let i = 0; i < nameCheckbox.length; i++) {
+        if (nameCheckbox[i].checked) {
+            selectedValue = nameCheckbox[i].value;
+            break; 
+        }
+    }
+
+    return selectedValue
+}
