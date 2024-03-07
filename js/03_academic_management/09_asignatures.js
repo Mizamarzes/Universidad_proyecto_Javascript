@@ -13,20 +13,30 @@ const loadFormAsignatures=()=>{
 
             <div class="mb-3">
                 <label for="searchCoursesInputLabel" class="form-label">Select Course:</label>
-                <input type="text" class="form-control" id="search-courses-input" placeholder="Search Courses...">
-                <ul id="search-courses-results"></ul>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="search-courses-input" placeholder="Search Courses...">
+                </div>
+                <div class="mb-3">
+                    <select id="search-courses-results">
+
+                    </select>
+                </div>    
             </div>
 
             <div class="mb-3">
                 <label for="searchTeachersInputLabel" class="form-label">Select Teacher:</label>
                 <input type="text" class="form-control" id="search-teachers-input" placeholder="Search Teachers...">
-                <ul id="search-teachers-results"></ul>
+                <select id="search-teachers-results">
+                
+                </select>
             </div>
 
             <div class="mb-3">
                 <label for="searchProgramsInputLabel" class="form-label">Select Program:</label>
                 <input type="text" class="form-control" id="search-programs-input" placeholder="Search Programs...">
-                <ul id="search-programs-results"></ul>
+                <select id="search-programs-results">
+                
+                </select>
             </div>
 
             <div class="mb-3">
@@ -52,7 +62,7 @@ const loadFormAsignatures=()=>{
                 <div class="mb-3">
                     <label for="hoursScheduleAsignatureInputLabel" class="form-label">Time:</label>
                     <select class="form-select" id="selectedHoursScheduleAsignature">
-                        ${generateOptionsForm(scheduleList, "name", "start_time", 2)}
+                        ${generateOptionsForm(schedulesList, "id", "start_time", 2)}
                     </select>
                 </div>
 
@@ -63,10 +73,10 @@ const loadFormAsignatures=()=>{
                     </select>
                 </div>
                 
-                <button type="button" class="btn btn-primary" onclick="createAsignature()">Add Schedule</button>
+                <button type="button" class="btn btn-primary" onclick="addScheduleAsignatures()">Add Schedule</button>
 
-                <div class="mb-5 mt-3">
-                    <label for="listScheduleAsignatureInputLabel" class="form-label">List of Schedule: LACK THIS PART</label>
+                <label for="listScheduleAsignatureInputLabel" class="form-label">List of Schedule:</label>
+                <div class="mb-5 mt-3" id="listItemsScheduleAsignature">
                 </div>
             </div>
 
@@ -84,26 +94,77 @@ const loadFormAsignatures=()=>{
     searchElementsList("search-programs-input", "search-programs-results", programsList, "Programs")
 }
 
+// ------------- ADD ITEM, ASIGNATURES --------------------------
+
+const addScheduleAsignatures = () => {
+    const daySelect = document.getElementById('selectedDayScheduleAsignature').value;
+    const hourSelect = document.getElementById('selectedHoursScheduleAsignature').value;
+    const salonSelect = document.getElementById('selectedSalonScheduleAsignature').value;
+
+    const listItems = document.getElementById('listItemsScheduleAsignature');
+
+    if (!daySelect || !hourSelect || !salonSelect) {
+        alert("Please, select a day, an hour, and a salon");
+        return;
+    }
+
+    const selectedSalon = salonsList.find(salon => salon.id === salonSelect);
+    const nameSalonSchedule = selectedSalon.identification_number;
+
+    // looking for start and end time of the schedule
+    const selectedSchedule = schedulesList.find(schedule => schedule.id === parseInt(hourSelect));
+    const startTimeSchedule = selectedSchedule.start_time;
+    const endTimeSchedule = selectedSchedule.end_time;
+
+    const li = document.createElement('li');
+    li.textContent = `
+        Day: ${daySelect} - Salon: ${nameSalonSchedule} - Start Time: ${startTimeSchedule} - End Time: ${endTimeSchedule}
+    `;
+    listItems.appendChild(li);
+
+    document.getElementById('selectedDayScheduleAsignature').value = "";
+    document.getElementById('selectedHoursScheduleAsignature').value = "";
+    document.getElementById('selectedSalonScheduleAsignature').value = "";
+}
+
+// ------------- CREATE ASIGNATURE --------------------------
+
+const createAsignature=()=>{
+    
+}
 
 // ------------- SHOW LIST OF ASIGNATURES --------------------------
 
-const showListAsignatures=async()=>{
+const showListAsignatures = async () => {
     await loadJson("asignatures", asignaturesList, "ASIGNATURES");
-    const listAsignatures=document.getElementById("show-info");
-    
-    const ul=document.createElement('ul');
+    const listAsignatures = document.getElementById("show-info");
 
-    for(const asignature of asignaturesList){
-        const li=document.createElement('li');
-        li.textContent= `
+    const ul = document.createElement('ul');
+
+    for (const asignature of asignaturesList) {
+        const li = document.createElement('li');
+        let classScheduleText = "class schedule: ";
+        
+        if (asignature.class_schedule.length > 0) {
+
+            const schedules = asignature.class_schedule.map(schedule => {
+                return `Day: ${schedule.day}, Start Time: ${schedule.start_time}, End Time: ${schedule.end_time}, Salon ID: ${schedule.salon_id}--------`;
+            });
+            classScheduleText += schedules.join('; '); // Unir los horarios con un punto y coma
+        } else {
+            classScheduleText += "No class schedule available";
+        }
+
+        li.textContent = `
             id: ${asignature.id}, course'id: ${asignature.course_id}, code: ${asignature.code},
             credits: ${asignature.credits}, teacher'id: ${asignature.teacher_id},
             available quotas: ${asignature.available_quotas}, program'id: ${asignature.program_id},
-            class schedule: "NOT FINISH NEED TO IMPROVES"
-            `;
+            ${classScheduleText}
+        `;
+
         ul.appendChild(li);
     }
 
-    listAsignatures.innerHTML='';
+    listAsignatures.innerHTML = '';
     listAsignatures.appendChild(ul);
 }

@@ -227,12 +227,6 @@
       "name": "schedule 5",
       "start_time": "16:00",
       "end_time": "18:00"
-    },
-    {
-      "id": 6,
-      "name": "schedule 6",
-      "start_time": "10:00",
-      "end_time": "12:00"
     }
   ],
   "days":[

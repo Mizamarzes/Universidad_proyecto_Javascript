@@ -42,7 +42,7 @@ const saveJson= async(url, newItem, messageSecurity)=>{
 // ------------- SCHEDULE SYSTEM --------------------------
 
 const daysList=[];
-const scheduleList=[];
+const schedulesList=[];
 
 const generateOptionsForm = (itemsList, value, valueMessage, type) => {
     let options = '';
@@ -57,8 +57,6 @@ const generateOptionsForm = (itemsList, value, valueMessage, type) => {
     }
     return options;
 }
-
-
 
 // ------------- DIFFERENTS FUNCTION UTILS --------------------------
 
@@ -84,22 +82,19 @@ function searchElementsList(searchInputId, searchResultsId, listElements, fieldN
 
     function showResults(results) {
         searchResults.innerHTML = '';
-
+        
         if (results.length === 0) {
-            const li = document.createElement('li');
-            li.textContent = `Not found ${fieldName}`;
-            searchResults.appendChild(li);
+            const option = document.createElement('option');
+            option.textContent = `Not found ${fieldName}`;
+            searchResults.appendChild(option);
             return;
         }
 
         results.forEach(result => {
-            const li = document.createElement('li');
-            li.textContent = result.name;
-            li.addEventListener('click', function () {
-                searchInput.value = result.name;
-                searchResults.innerHTML = '';
-            });
-            searchResults.appendChild(li);
+            const option = document.createElement('option');
+            option.textContent = result.name;
+            option.value = result.name;
+            searchResults.appendChild(option);
         });
     }
 
@@ -108,4 +103,10 @@ function searchElementsList(searchInputId, searchResultsId, listElements, fieldN
         const filteredItems = listElements.filter(item => item.name.toLowerCase().includes(inputValue));
         showResults(filteredItems);
     });
+
+    searchResults.addEventListener('change', function () {
+        searchInput.value = this.value;
+        searchResults.innerHTML = '';
+    });
 }
+

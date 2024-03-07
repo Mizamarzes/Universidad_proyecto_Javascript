@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded',async()=>{
     await loadJson("days", daysList, "DAYS");
 
     // schedules
-    await loadJson("schedules", scheduleList, "SCHEDULES");
+    await loadJson("schedules", schedulesList, "SCHEDULES");
     
 
 })
