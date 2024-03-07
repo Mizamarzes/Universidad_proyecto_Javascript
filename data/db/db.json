@@ -59,6 +59,14 @@
       "name": "María",
       "last_name": "Gómez",
       "department_id": 2
+    },
+    {
+      "id": 3,
+      "document_type": "CC",
+      "document_number": "412414",
+      "name": "carlos",
+      "last_name": "peñaloza",
+      "department_id": 1
     }
   ],
   "students": [
@@ -89,7 +97,7 @@
       "program_id": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "juanito",
       "last_name": "juanito contreras melendez",
       "document_type": "C.C",
@@ -187,6 +195,61 @@
       "asignature_id": 2,
       "period_id": 1,
       "price": 3300
+    }
+  ],
+  "schedules":[
+    {
+      "id": 1,
+      "name": "schedule 1",
+      "start_time": "06:00",
+      "end_time": "08:00"
+    },
+    {
+      "id": 2,
+      "name": "schedule 2",
+      "start_time": "08:00",
+      "end_time": "10:00"
+    },
+    {
+      "id": 3,
+      "name": "schedule 3",
+      "start_time": "10:00",
+      "end_time": "12:00"
+    },
+    {
+      "id": 4,
+      "name": "schedule 4",
+      "start_time": "14:00",
+      "end_time": "16:00"
+    },
+    {
+      "id": 5,
+      "name": "schedule 5",
+      "start_time": "16:00",
+      "end_time": "18:00"
+    },
+    {
+      "id": 6,
+      "name": "schedule 6",
+      "start_time": "10:00",
+      "end_time": "12:00"
+    }
+  ],
+  "days":[
+    {
+      "name": "Monday"
+    },
+    {
+      "name": "Tuesday"
+    },
+    {
+      "name": "Wednesday"
+    },
+    {
+      "name": "Thursday"
+    },
+    {
+      "name": "Friday"
     }
   ]
 }

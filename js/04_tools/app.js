@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded',async()=>{
     // SALONS
     await loadJson("salons", salonsList, "SALONS");
 
+    // COURSES
+    await loadJson("courses", coursesList, "COURSES");
+
     // STUDENTS
     await loadJson("students", studentsList, "STUDENTS");
     
@@ -26,5 +29,16 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
     // MATRICULATES
     await loadJson("matriculates", matriculatesList, "MATRICULATES");
+
+
+
+    //------ SCHEDULE ZONE---------
+
+    // days
+    await loadJson("days", daysList, "DAYS");
+
+    // schedules
+    await loadJson("schedules", scheduleList, "SCHEDULES");
+    
 
 })
