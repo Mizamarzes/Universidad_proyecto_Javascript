@@ -1,5 +1,43 @@
 const matriculatesList=[];
 
+// ------------- LOAD FORM OF MATRICULATES --------------------------
+
+const loadFormMatriculates=()=>{
+    const formMatriculates = document.getElementById('show-info');
+    formMatriculates.innerHTML=`
+        <form>
+            <div class="mb-3">
+                <label for="studentsMatriculatesLabel" class="form-label">Select Student:</label>
+                <select id="select-students-results">
+                    ${generateOptionsForm(studentsList, "id", "name", 1)}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="asignaturesMatriculatesLabel" class="form-label">Select Asignature:</label>
+                <select id="select-asignatures-results">
+                    ${generateOptionsForm(asignaturesList, "id", "code", 1)}
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="periodsMatriculatesLabel" class="form-label">Select Period:</label>
+                <select id="select-periods-results">
+                    ${generateOptionsForm(periodsList, "id", "code", 1)}
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="createMatriculate()">Create Matriculate</button>
+        </form>
+    `;
+}
+
+// ------------- CREATE MATRICULATE --------------------------
+
+const createMatriculate=async()=>{
+    console.log("monda")
+}
+
 
 // ------------- SHOW LIST OF MATRICULATES --------------------------
 

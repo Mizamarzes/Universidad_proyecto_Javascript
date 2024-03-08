@@ -70,7 +70,7 @@ const loadFormAsignatures=()=>{
 
                 <label for="listScheduleAsignatureInputLabel" class="form-label">List of Schedule:</label>
                 <ul class="mb-5 mt-3" id="listItemsScheduleAsignature">
-                
+
                 </ul>
             </div>
 
@@ -103,7 +103,7 @@ const addScheduleAsignatures = () => {
     }
 
     const li = document.createElement('li');
-
+    
     li.textContent = `
         Day: ${selectedDay.name} - Salon: ${selectSalon.identification_number} 
         - Start Time: ${selectHour.start_time} - End Time: ${selectHour.end_time}
@@ -118,8 +118,7 @@ const addScheduleAsignatures = () => {
 
 // ------------- CREATE ASIGNATURE --------------------------
 
-const createAsignature=async()=>{
-    
+const createAsignature = async () => {
     const codeAsignature = document.getElementById('codeAsignatureInput').value;
     const courseAsignatureId = parseInt(document.getElementById('search-courses-results').value);
     const creditsAsignature = parseInt(document.getElementById('creditsAsignatureInput').value);
@@ -127,23 +126,37 @@ const createAsignature=async()=>{
     const availableQuotasAsignature = parseInt(document.getElementById('availableQuotasAsignatureInput').value);
     const programAsignatureId = parseInt(document.getElementById('search-programs-results').value);
 
-    // List of class schedule
+    // Lista de horarios de clase
     const listItemsClassScheduleAsignature = document.getElementById('listItemsScheduleAsignature');
     const itemsScheduleAsignature = [];
 
-    for(const li of listItemsClassScheduleAsignature.getElementsByTagName('li')){
-        itemsScheduleAsignature.push(li.textContent);
+    for (const li of listItemsClassScheduleAsignature.getElementsByTagName('li')) {
+        const itemText = li.textContent;
+        const scheduleInfo = itemText.split(' - '); // Separar la información de cada clase
+        const day = scheduleInfo[0].split(': ')[1]; // Extraer el día
+        const startTime = scheduleInfo[2].split(': ')[1]; // Extraer la hora de inicio
+        const endTime = scheduleInfo[3].split(': ')[1]; // Extraer la hora de fin
+        const salonName = scheduleInfo[1].split(': ')[1]; // Extraer el nombre del salón
+
+        // Encontrar el ID del salón
+        const salonIds = salonsList.filter(salon => salon.identification_number === salonName).map(salon => salon.id);
+
+        // Agregar la clase a la lista
+        itemsScheduleAsignature.push({
+            "day": day,
+            "start_time": startTime,
+            "end_time": endTime,
+            "salon_id": salonIds
+        });
     }
 
-    if (!codeAsignature || !courseAsignatureId || !creditsAsignature || 
-        !teacherAsignatureId || !availableQuotasAsignature || 
-        !programAsignatureId || listItemsClassScheduleAsignature.length===0) {
-        alert("Please, fill in all required fields");
+    if (!codeAsignature || !courseAsignatureId || !creditsAsignature || !teacherAsignatureId || !availableQuotasAsignature || !programAsignatureId || listItemsClassScheduleAsignature.length === 0) {
+        alert("Por favor, complete todos los campos requeridos");
         return;
     }
 
-    const newAsignature={
-        "id": asignaturesList.length+1,
+    const newAsignature = {
+        "id": asignaturesList.length + 1,
         "course_id": courseAsignatureId,
         "code": codeAsignature,
         "credits": creditsAsignature,
@@ -155,17 +168,17 @@ const createAsignature=async()=>{
     await saveJson("asignatures", newAsignature, "ASIGNATURE");
     await loadJson("asignatures", asignaturesList, "ASIGNATURES");
 
-    codeAsignature.value='';
-    courseAsignatureId.value='';
-    creditsAsignature.value='';
-    teacherAsignatureId.value='';
-    availableQuotasAsignature.value='';
-    programAsignatureId.value='';
-    listItemsClassScheduleAsignature.innerHTML='';
+    document.getElementById('codeAsignatureInput').value = '';
+    document.getElementById('search-courses-results').value = '';
+    document.getElementById('creditsAsignatureInput').value = '';
+    document.getElementById('search-teachers-results').value = '';
+    document.getElementById('availableQuotasAsignatureInput').value = '';
+    document.getElementById('search-programs-results').value = '';
+    listItemsClassScheduleAsignature.innerHTML = '';
 
-    alert("Asignature succesfuly created");
-
+    alert("Asignatura creada exitosamente");
 }
+
 
 // ------------- SHOW LIST OF ASIGNATURES --------------------------
 

@@ -179,6 +179,84 @@
           "salon_id": 1
         }
       ]
+    },
+    {
+      "id": 3,
+      "course_id": 1,
+      "code": "asdad",
+      "credits": 2,
+      "teacher_id": 2,
+      "program_id": 2,
+      "class_schedule": [
+        {
+          "day": "Wednesday",
+          "start_time": "10:00",
+          "end_time": "12:00\n    "
+        },
+        {
+          "day": "Friday",
+          "start_time": "16:00",
+          "end_time": "18:00\n    "
+        },
+        {
+          "day": "Monday",
+          "start_time": "10:00",
+          "end_time": "12:00\n    "
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "course_id": 1,
+      "code": "asdad",
+      "credits": 1,
+      "teacher_id": 1,
+      "program_id": 1,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "10:00",
+          "end_time": "12:00"
+        },
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00"
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "10:00",
+          "end_time": "12:00"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "course_id": 1,
+      "code": "asdsad",
+      "credits": 221,
+      "teacher_id": 2,
+      "program_id": 2,
+      "class_schedule": [
+        {
+          "day": "Wednesday",
+          "start_time": "10:00",
+          "end_time": "12:00\n    ",
+          "salon_id": []
+        },
+        {
+          "day": "Thursday",
+          "start_time": "06:00",
+          "end_time": "08:00\n    ",
+          "salon_id": []
+        },
+        {
+          "day": "Monday",
+          "start_time": "06:00",
+          "end_time": "08:00\n    ",
+          "salon_id": []
+        }
+      ]
     }
   ],
   "matriculates": [
@@ -231,24 +309,24 @@
   ],
   "days": [
     {
-      "name": "Monday",
-      "id": "dbb8"
+      "id": "1",
+      "name": "Monday"
     },
     {
-      "name": "Tuesday",
-      "id": "be80"
+      "id": "2",
+      "name": "Tuesday"
     },
     {
-      "name": "Wednesday",
-      "id": "9eae"
+      "id": "3",
+      "name": "Wednesday"
     },
     {
-      "name": "Thursday",
-      "id": "0c5a"
+      "id": "4",
+      "name": "Thursday"
     },
     {
-      "name": "Friday",
-      "id": "fe39"
+      "id": "5",
+      "name": "Friday"
     }
   ]
 }
