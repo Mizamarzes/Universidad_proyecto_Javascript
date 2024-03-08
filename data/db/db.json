@@ -61,7 +61,7 @@
       "department_id": 2
     },
     {
-      "id": 3,
+      "id": "3",
       "document_type": "CC",
       "document_number": "412414",
       "name": "carlos",
@@ -197,53 +197,58 @@
       "price": 3300
     }
   ],
-  "schedules":[
+  "schedules": [
     {
-      "id": 1,
+      "id": "1",
       "name": "schedule 1",
       "start_time": "06:00",
       "end_time": "08:00"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "schedule 2",
       "start_time": "08:00",
       "end_time": "10:00"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "schedule 3",
       "start_time": "10:00",
       "end_time": "12:00"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "schedule 4",
       "start_time": "14:00",
       "end_time": "16:00"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "schedule 5",
       "start_time": "16:00",
       "end_time": "18:00"
     }
   ],
-  "days":[
+  "days": [
     {
-      "name": "Monday"
+      "name": "Monday",
+      "id": "dbb8"
     },
     {
-      "name": "Tuesday"
+      "name": "Tuesday",
+      "id": "be80"
     },
     {
-      "name": "Wednesday"
+      "name": "Wednesday",
+      "id": "9eae"
     },
     {
-      "name": "Thursday"
+      "name": "Thursday",
+      "id": "0c5a"
     },
     {
-      "name": "Friday"
+      "name": "Friday",
+      "id": "fe39"
     }
   ]
 }

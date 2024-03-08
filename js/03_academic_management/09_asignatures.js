@@ -13,29 +13,22 @@ const loadFormAsignatures=()=>{
 
             <div class="mb-3">
                 <label for="searchCoursesInputLabel" class="form-label">Select Course:</label>
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="search-courses-input" placeholder="Search Courses...">
-                </div>
-                <div class="mb-3">
-                    <select id="search-courses-results">
-
-                    </select>
-                </div>    
+                <select id="search-courses-results">
+                    ${generateOptionsForm(coursesList, "id", "name", 1)}
+                </select>
             </div>
 
             <div class="mb-3">
                 <label for="searchTeachersInputLabel" class="form-label">Select Teacher:</label>
-                <input type="text" class="form-control" id="search-teachers-input" placeholder="Search Teachers...">
                 <select id="search-teachers-results">
-                
+                    ${generateOptionsForm(teachersList, "id", "name", 1)}
                 </select>
             </div>
 
             <div class="mb-3">
                 <label for="searchProgramsInputLabel" class="form-label">Select Program:</label>
-                <input type="text" class="form-control" id="search-programs-input" placeholder="Search Programs...">
                 <select id="search-programs-results">
-                
+                    ${generateOptionsForm(programsList, "id", "name", 1)}
                 </select>
             </div>
 
@@ -76,8 +69,9 @@ const loadFormAsignatures=()=>{
                 <button type="button" class="btn btn-primary" onclick="addScheduleAsignatures()">Add Schedule</button>
 
                 <label for="listScheduleAsignatureInputLabel" class="form-label">List of Schedule:</label>
-                <div class="mb-5 mt-3" id="listItemsScheduleAsignature">
-                </div>
+                <ul class="mb-5 mt-3" id="listItemsScheduleAsignature">
+                
+                </ul>
             </div>
 
             <button type="button" class="btn btn-primary" onclick="createAsignature()">Create Asignature</button>
@@ -87,50 +81,90 @@ const loadFormAsignatures=()=>{
     `;
 
     // SEARCH ENGINE FOR COURSERS 
-    searchElementsList("search-courses-input", "search-courses-results", coursesList, "Courses");
+    // searchElementsList("search-courses-input", "search-courses-results", coursesList, "Courses");
     // SEARCH ENGINE FOR TEACHERS 
-    searchElementsList("search-teachers-input", "search-teachers-results", teachersList, "Teachers")
+    // searchElementsList("search-teachers-input", "search-teachers-results", teachersList, "Teachers")
     // SEARCH ENGINE FOR PROGRAMS 
-    searchElementsList("search-programs-input", "search-programs-results", programsList, "Programs")
+    // searchElementsList("search-programs-input", "search-programs-results", programsList, "Programs")
 }
 
 // ------------- ADD ITEM, ASIGNATURES --------------------------
 
 const addScheduleAsignatures = () => {
-    const daySelect = document.getElementById('selectedDayScheduleAsignature').value;
-    const hourSelect = document.getElementById('selectedHoursScheduleAsignature').value;
-    const salonSelect = document.getElementById('selectedSalonScheduleAsignature').value;
+    const selectedDay = daysList[document.getElementById('selectedDayScheduleAsignature').selectedIndex];
+    const selectHour = schedulesList[document.getElementById('selectedHoursScheduleAsignature').selectedIndex];
+    const selectSalon = salonsList[document.getElementById('selectedSalonScheduleAsignature').selectedIndex];
 
     const listItems = document.getElementById('listItemsScheduleAsignature');
 
-    if (!daySelect || !hourSelect || !salonSelect) {
+    if (!selectedDay || !selectHour || !selectSalon) {
         alert("Please, select a day, an hour, and a salon");
         return;
     }
 
-    const selectedSalon = salonsList.find(salon => salon.id === salonSelect);
-    const nameSalonSchedule = selectedSalon.identification_number;
-
-    // looking for start and end time of the schedule
-    const selectedSchedule = schedulesList.find(schedule => schedule.id === parseInt(hourSelect));
-    const startTimeSchedule = selectedSchedule.start_time;
-    const endTimeSchedule = selectedSchedule.end_time;
-
     const li = document.createElement('li');
+
     li.textContent = `
-        Day: ${daySelect} - Salon: ${nameSalonSchedule} - Start Time: ${startTimeSchedule} - End Time: ${endTimeSchedule}
+        Day: ${selectedDay.name} - Salon: ${selectSalon.identification_number} 
+        - Start Time: ${selectHour.start_time} - End Time: ${selectHour.end_time}
     `;
     listItems.appendChild(li);
 
-    document.getElementById('selectedDayScheduleAsignature').value = "";
-    document.getElementById('selectedHoursScheduleAsignature').value = "";
-    document.getElementById('selectedSalonScheduleAsignature').value = "";
+    // Clear selection after adding
+    selectedDay.selectedIndex=-1;
+    selectHour.selectedIndex=-1;
+    selectSalon.selectedIndex=-1;
 }
 
 // ------------- CREATE ASIGNATURE --------------------------
 
-const createAsignature=()=>{
+const createAsignature=async()=>{
     
+    const codeAsignature = document.getElementById('codeAsignatureInput').value;
+    const courseAsignatureId = parseInt(document.getElementById('search-courses-results').value);
+    const creditsAsignature = parseInt(document.getElementById('creditsAsignatureInput').value);
+    const teacherAsignatureId = parseInt(document.getElementById('search-teachers-results').value);
+    const availableQuotasAsignature = parseInt(document.getElementById('availableQuotasAsignatureInput').value);
+    const programAsignatureId = parseInt(document.getElementById('search-programs-results').value);
+
+    // List of class schedule
+    const listItemsClassScheduleAsignature = document.getElementById('listItemsScheduleAsignature');
+    const itemsScheduleAsignature = [];
+
+    for(const li of listItemsClassScheduleAsignature.getElementsByTagName('li')){
+        itemsScheduleAsignature.push(li.textContent);
+    }
+
+    if (!codeAsignature || !courseAsignatureId || !creditsAsignature || 
+        !teacherAsignatureId || !availableQuotasAsignature || 
+        !programAsignatureId || listItemsClassScheduleAsignature.length===0) {
+        alert("Please, fill in all required fields");
+        return;
+    }
+
+    const newAsignature={
+        "id": asignaturesList.length+1,
+        "course_id": courseAsignatureId,
+        "code": codeAsignature,
+        "credits": creditsAsignature,
+        "teacher_id": teacherAsignatureId,
+        "program_id": programAsignatureId,
+        "class_schedule": itemsScheduleAsignature
+    };
+
+    await saveJson("asignatures", newAsignature, "ASIGNATURE");
+    await loadJson("asignatures", asignaturesList, "ASIGNATURES");
+
+    codeAsignature.value='';
+    courseAsignatureId.value='';
+    creditsAsignature.value='';
+    teacherAsignatureId.value='';
+    availableQuotasAsignature.value='';
+    programAsignatureId.value='';
+    listItemsClassScheduleAsignature.innerHTML='';
+
+    alert("Asignature succesfuly created");
+
 }
 
 // ------------- SHOW LIST OF ASIGNATURES --------------------------
