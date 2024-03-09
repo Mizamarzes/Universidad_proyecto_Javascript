@@ -8,12 +8,12 @@ const loadFormTeachers=()=>{
         <form>
             <div class="mb-3">
                 <label for="nameTeacherInput" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nameTeacherInput">
+                <input type="text" class="form-control" id="nameTeacherInput" required>
             </div>
 
             <div class="mb-3">
                 <label for="lastNameTeacherInput" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastNameTeacherInput">
+                <input type="text" class="form-control" id="lastNameTeacherInput" required>
             </div>
 
             <label for="textCheckDocumentTypeTeacher" class="form-label">Document type</label>
@@ -34,7 +34,14 @@ const loadFormTeachers=()=>{
 
             <div class="mb-3">
                 <label for="documentNumberTeacherInput" class="form-label">Document number</label>
-                <input type="number" class="form-control" id="documentNumberTeacherInput">
+                <input type="number" class="form-control" id="documentNumberTeacherInput" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="departmentTeacherLabel" class="form-label">Department:</label>
+                <select class="form-select" id="selectedDepartmentTeacher">
+                    ${generateOptionsForm(departmentsList, "id", "name", 1)}
+                </select>
             </div>
 
             <button type="button" class="btn btn-primary" onclick="createTeacher()">Create Teacher</button>
@@ -49,6 +56,7 @@ const createTeacher=async()=>{
     const nameTeacherInput=document.getElementById('nameTeacherInput').value;
     const lastNameTeacherInput=document.getElementById('lastNameTeacherInput').value;
     const documentNumberTeacherInput=document.getElementById('documentNumberTeacherInput').value;
+    const departmentTeacher = document.getElementById('selectedDepartmentTeacher').value;
     
     // get the value about checkbox - document type
     const optionsDocumentTypeTeacher=document.getElementsByName('documentTypeOptionsTeacher');
@@ -60,7 +68,7 @@ const createTeacher=async()=>{
         document_number: documentNumberTeacherInput,
         name: nameTeacherInput,
         last_name: lastNameTeacherInput,
-        department_id: 1
+        department_id: parseInt(departmentTeacher)
     }
 
     await saveJson("teachers", newTeacher, "TEACHER");
@@ -70,12 +78,10 @@ const createTeacher=async()=>{
     documentNumberTeacherInput.value='';
     nameTeacherInput.value='';
     lastNameTeacherInput.value='';
+    departmentTeacher.value = '';
 
     alert("Teacher succesfuly created");
-
-    return newTeacher
 }
-
 
 // ------------- SHOW LIST OF TEACHERS --------------------------
 

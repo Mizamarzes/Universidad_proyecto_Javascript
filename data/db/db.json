@@ -67,6 +67,22 @@
       "name": "carlos",
       "last_name": "peñaloza",
       "department_id": 1
+    },
+    {
+      "id": 4,
+      "document_type": "TI",
+      "document_number": "23131",
+      "name": "asdasdsadadasdad",
+      "last_name": "asdad",
+      "department_id": "1"
+    },
+    {
+      "id": 5,
+      "document_type": "CE",
+      "document_number": "2414142",
+      "name": "komanche",
+      "last_name": "asdadad",
+      "department_id": 2
     }
   ],
   "students": [

@@ -8,7 +8,7 @@ const loadFormAsignatures=()=>{
         <form>
             <div class="mb-3">
                 <label for="codeAsignatureInputLabel" class="form-label">Code of Asignature:</label>
-                <input type="text" class="form-control" id="codeAsignatureInput">
+                <input type="text" class="form-control" id="codeAsignatureInput" required>
             </div>
 
             <div class="mb-3">
@@ -34,12 +34,12 @@ const loadFormAsignatures=()=>{
 
             <div class="mb-3">
                 <label for="availableQuotasAsignatureInputLabel" class="form-label">Maximum number of spaces available:</label>
-                <input type="number" class="form-control" id="availableQuotasAsignatureInput">
+                <input type="number" class="form-control" id="availableQuotasAsignatureInput" required>
             </div>
 
             <div class="mb-3">
                 <label for="creditsAsignatureInputLabel" class="form-label">Quantity of credits:</label>
-                <input type="number" class="form-control" id="creditsAsignatureInput">
+                <input type="number" class="form-control" id="creditsAsignatureInput" required>
             </div>
 
             <div class="mb-3">

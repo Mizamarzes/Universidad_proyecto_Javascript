@@ -8,12 +8,12 @@ const loadFormStudents=()=>{
         <form>
             <div class="mb-3">
                 <label for="nameStudentInput" class="form-label">Name</label>
-                <input type="text" class="form-control" id="nameStudentInput">
+                <input type="text" class="form-control" id="nameStudentInput" required>
             </div>
 
             <div class="mb-3">
                 <label for="lastNameStudentInput" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="lastNameStudentInput">
+                <input type="text" class="form-control" id="lastNameStudentInput" required>
             </div>
 
             <label for="textCheckDocumentTypeStudent" class="form-label">Document type</label>
@@ -34,27 +34,27 @@ const loadFormStudents=()=>{
 
             <div class="mb-3">
                 <label for="documentNumberStudentInput" class="form-label">Document number</label>
-                <input type="number" class="form-control" id="documentNumberStudentInput">
+                <input type="number" class="form-control" id="documentNumberStudentInput" required>
             </div>
 
             <div class="mb-3">
                 <label for="cityResidenceStudentInput" class="form-label">City of residence</label>
-                <input type="text" class="form-control" id="cityResidenceStudentInput">
+                <input type="text" class="form-control" id="cityResidenceStudentInput" required>
             </div>
 
             <div class="mb-3">
                 <label for="addressStudentInput" class="form-label">Address</label>
-                <input type="text" class="form-control" id="addressStudentInput">
+                <input type="text" class="form-control" id="addressStudentInput" required>
             </div>
             
             <div class="mb-3">
                 <label for="phoneNumberStudentInput" class="form-label">Phone number</label>
-                <input type="number" class="form-control" id="phoneNumberStudentInput">
+                <input type="number" class="form-control" id="phoneNumberStudentInput" required>
             </div>
 
             <div class="mb-3">
                 <label for="dateBornStudentInput" class="form-label">Date born</label>
-                <input type="date" class="form-control" id="dateBornStudentInput">
+                <input type="date" class="form-control" id="dateBornStudentInput" required>
             </div>
 
             <label for="textCheckSex" class="form-label">Sex</label>
@@ -128,7 +128,6 @@ const createStudent=async()=>{
     
     alert("Student succesfuly created");
 
-    return newStudent;
 }
 
 // ------------- SHOW LIST OF STUDENTS --------------------------
