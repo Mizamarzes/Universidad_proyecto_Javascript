@@ -182,79 +182,57 @@
     },
     {
       "id": 3,
-      "course_id": 1,
-      "code": "asdad",
-      "credits": 2,
+      "course_id": 2,
+      "code": "KOMANCHE LA CABRA",
+      "credits": 3,
       "teacher_id": 2,
       "program_id": 2,
       "class_schedule": [
         {
           "day": "Wednesday",
-          "start_time": "10:00",
-          "end_time": "12:00\n    "
+          "start_time": "06:00",
+          "end_time": "08:00",
+          "salon_id": 1
         },
         {
-          "day": "Friday",
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 1
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 1
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 1
+        },
+        {
+          "day": "Wednesday",
           "start_time": "16:00",
-          "end_time": "18:00\n    "
-        },
-        {
-          "day": "Monday",
-          "start_time": "10:00",
-          "end_time": "12:00\n    "
+          "end_time": "18:00",
+          "salon_id": 1
         }
       ]
     },
     {
       "id": 4,
       "course_id": 1,
-      "code": "asdad",
-      "credits": 1,
+      "code": "PEPITO EL MANGO",
+      "credits": 2,
       "teacher_id": 1,
       "program_id": 1,
       "class_schedule": [
         {
-          "day": "Monday",
-          "start_time": "10:00",
-          "end_time": "12:00"
-        },
-        {
           "day": "Tuesday",
-          "start_time": "10:00",
-          "end_time": "12:00"
-        },
-        {
-          "day": "Wednesday",
-          "start_time": "10:00",
-          "end_time": "12:00"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "course_id": 1,
-      "code": "asdsad",
-      "credits": 221,
-      "teacher_id": 2,
-      "program_id": 2,
-      "class_schedule": [
-        {
-          "day": "Wednesday",
-          "start_time": "10:00",
-          "end_time": "12:00\n    ",
-          "salon_id": []
-        },
-        {
-          "day": "Thursday",
-          "start_time": "06:00",
-          "end_time": "08:00\n    ",
-          "salon_id": []
-        },
-        {
-          "day": "Monday",
-          "start_time": "06:00",
-          "end_time": "08:00\n    ",
-          "salon_id": []
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 1
         }
       ]
     }

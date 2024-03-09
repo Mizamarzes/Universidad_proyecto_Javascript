@@ -90,6 +90,9 @@ const loadFormAsignatures=()=>{
 
 // ------------- ADD ITEM, ASIGNATURES --------------------------
 
+// List for saving classes schedules
+const listClassesScheduleAsignatures = [];
+
 const addScheduleAsignatures = () => {
     const selectedDay = daysList[document.getElementById('selectedDayScheduleAsignature').selectedIndex];
     const selectHour = schedulesList[document.getElementById('selectedHoursScheduleAsignature').selectedIndex];
@@ -110,6 +113,17 @@ const addScheduleAsignatures = () => {
     `;
     listItems.appendChild(li);
 
+    // adds each class to the list
+    const newClass={
+        "day": selectedDay.name,
+        "start_time": selectHour.start_time,
+        "end_time": selectHour.end_time,
+        "salon_id": parseInt(selectSalon.id)
+    };
+
+    listClassesScheduleAsignatures.push(newClass);
+    console.log(listClassesScheduleAsignatures);
+
     // Clear selection after adding
     selectedDay.selectedIndex=-1;
     selectHour.selectedIndex=-1;
@@ -126,31 +140,7 @@ const createAsignature = async () => {
     const availableQuotasAsignature = parseInt(document.getElementById('availableQuotasAsignatureInput').value);
     const programAsignatureId = parseInt(document.getElementById('search-programs-results').value);
 
-    // Lista de horarios de clase
-    const listItemsClassScheduleAsignature = document.getElementById('listItemsScheduleAsignature');
-    const itemsScheduleAsignature = [];
-
-    for (const li of listItemsClassScheduleAsignature.getElementsByTagName('li')) {
-        const itemText = li.textContent;
-        const scheduleInfo = itemText.split(' - '); // Separar la información de cada clase
-        const day = scheduleInfo[0].split(': ')[1]; // Extraer el día
-        const startTime = scheduleInfo[2].split(': ')[1]; // Extraer la hora de inicio
-        const endTime = scheduleInfo[3].split(': ')[1]; // Extraer la hora de fin
-        const salonName = scheduleInfo[1].split(': ')[1]; // Extraer el nombre del salón
-
-        // Encontrar el ID del salón
-        const salonIds = salonsList.filter(salon => salon.identification_number === salonName).map(salon => salon.id);
-
-        // Agregar la clase a la lista
-        itemsScheduleAsignature.push({
-            "day": day,
-            "start_time": startTime,
-            "end_time": endTime,
-            "salon_id": salonIds
-        });
-    }
-
-    if (!codeAsignature || !courseAsignatureId || !creditsAsignature || !teacherAsignatureId || !availableQuotasAsignature || !programAsignatureId || listItemsClassScheduleAsignature.length === 0) {
+    if (!codeAsignature || !courseAsignatureId || !creditsAsignature || !teacherAsignatureId || !availableQuotasAsignature || !programAsignatureId || listClassesScheduleAsignatures.length === 0) {
         alert("Por favor, complete todos los campos requeridos");
         return;
     }
@@ -162,7 +152,7 @@ const createAsignature = async () => {
         "credits": creditsAsignature,
         "teacher_id": teacherAsignatureId,
         "program_id": programAsignatureId,
-        "class_schedule": itemsScheduleAsignature
+        "class_schedule": listClassesScheduleAsignatures
     };
 
     await saveJson("asignatures", newAsignature, "ASIGNATURE");
@@ -174,7 +164,7 @@ const createAsignature = async () => {
     document.getElementById('search-teachers-results').value = '';
     document.getElementById('availableQuotasAsignatureInput').value = '';
     document.getElementById('search-programs-results').value = '';
-    listItemsClassScheduleAsignature.innerHTML = '';
+    listClassesScheduleAsignatures.length = 0;
 
     alert("Asignatura creada exitosamente");
 }
