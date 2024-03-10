@@ -69,7 +69,7 @@
       "department_id": 1
     },
     {
-      "id": 4,
+      "id": "4",
       "document_type": "TI",
       "document_number": "23131",
       "name": "asdasdsadadasdad",
@@ -77,7 +77,7 @@
       "department_id": "1"
     },
     {
-      "id": 5,
+      "id": "5",
       "document_type": "CE",
       "document_number": "2414142",
       "name": "komanche",
@@ -123,6 +123,19 @@
       "phone_number": "132421314",
       "date_born": "14214-12-04",
       "sex": "option1",
+      "program_id": 1
+    },
+    {
+      "id": 4,
+      "name": "asdas",
+      "last_name": "dasda",
+      "document_type": "CC",
+      "document_number": "2131",
+      "city_of_residence": "123",
+      "address": "312",
+      "phone_number": "12312",
+      "date_born": "2131-03-12",
+      "sex": "male",
       "program_id": 1
     }
   ],
@@ -197,7 +210,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "course_id": 2,
       "code": "KOMANCHE LA CABRA",
       "credits": 3,
@@ -237,7 +250,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "course_id": 1,
       "code": "PEPITO EL MANGO",
       "credits": 2,
@@ -255,18 +268,11 @@
   ],
   "matriculates": [
     {
-      "id": "1",
-      "student_id": 1,
-      "asignature_id": 1,
-      "period_id": 1,
+      "id": 1,
+      "student_id": "1",
+      "asignature_id": "1",
+      "period_id": "1",
       "price": 4000
-    },
-    {
-      "id": "1",
-      "student_id": 1,
-      "asignature_id": 2,
-      "period_id": 1,
-      "price": 3300
     }
   ],
   "schedules": [

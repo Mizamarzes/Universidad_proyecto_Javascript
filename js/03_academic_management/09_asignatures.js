@@ -1,5 +1,8 @@
 const asignaturesList=[];
 
+// List for saving classes schedules
+const listClassesScheduleAsignatures = [];
+
 // ------------- LOAD FORM OF ASIGNATURES --------------------------
 
 const loadFormAsignatures=()=>{
@@ -90,8 +93,7 @@ const loadFormAsignatures=()=>{
 
 // ------------- ADD ITEM, ASIGNATURES --------------------------
 
-// List for saving classes schedules
-const listClassesScheduleAsignatures = [];
+
 
 const addScheduleAsignatures = () => {
     const selectedDay = daysList[document.getElementById('selectedDayScheduleAsignature').selectedIndex];
@@ -141,7 +143,7 @@ const createAsignature = async () => {
     const programAsignatureId = parseInt(document.getElementById('search-programs-results').value);
 
     if (!codeAsignature || !courseAsignatureId || !creditsAsignature || !teacherAsignatureId || !availableQuotasAsignature || !programAsignatureId || listClassesScheduleAsignatures.length === 0) {
-        alert("Por favor, complete todos los campos requeridos");
+        alert("Please, complete all of fields");
         return;
     }
 
@@ -166,7 +168,7 @@ const createAsignature = async () => {
     document.getElementById('search-programs-results').value = '';
     listClassesScheduleAsignatures.length = 0;
 
-    alert("Asignatura creada exitosamente");
+    alert("Asignatura created succesfuly");
 }
 
 
