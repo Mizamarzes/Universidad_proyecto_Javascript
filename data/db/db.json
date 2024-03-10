@@ -126,7 +126,7 @@
       "program_id": 1
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "asdas",
       "last_name": "dasda",
       "document_type": "CC",
@@ -268,11 +268,25 @@
   ],
   "matriculates": [
     {
-      "id": 1,
+      "id": "1",
       "student_id": "1",
       "asignature_id": "1",
       "period_id": "1",
       "price": 4000
+    },
+    {
+      "id": 2,
+      "student_id": "2",
+      "asignature_id": "2",
+      "period_id": "1",
+      "price": 3300
+    },
+    {
+      "id": 3,
+      "student_id": "2",
+      "asignature_id": "2",
+      "period_id": "1",
+      "price": 3300
     }
   ],
   "schedules": [

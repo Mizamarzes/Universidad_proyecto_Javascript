@@ -48,9 +48,8 @@ const loadFormMatriculates=()=>{
 
 // ------------- ADD MATRICULATE TO THE LIST OF MATRICULATES --------------------------
 
-const addMatriculate = async (event) => {
-    event.preventDefault(); 
-    
+const addMatriculate = async () => {
+
     const selectStudent =  studentsList[document.getElementById('select-students-results-matriculates').selectedIndex];
     const selectAsignature = asignaturesList[document.getElementById('select-asignatures-results-matriculates').selectedIndex];
     const selectPeriod = periodsList[document.getElementById('select-periods-results-matriculates').selectedIndex];
