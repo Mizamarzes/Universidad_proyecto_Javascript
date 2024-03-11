@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded',async()=>{
 
     // schedules
     await loadJson("schedules", schedulesList, "SCHEDULES");
+
+    //------ HOME DESIGN ---------
+
+    loadHome();
     
 
 })
