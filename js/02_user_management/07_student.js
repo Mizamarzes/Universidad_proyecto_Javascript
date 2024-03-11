@@ -133,23 +133,30 @@ const createStudent=async()=>{
 // ------------- SHOW LIST OF STUDENTS --------------------------
 
 const showListStudents=async()=>{
-    await loadJson("students", studentsList, "STUDENTS");
-    const listStudents=document.getElementById("show-info");
-    
-    const ul=document.createElement('ul');
-
-    for(const student of studentsList){
-        const li=document.createElement('li');
-        li.textContent= `
-            id: ${student.id}, name: ${student.name}, last name: ${student.last_name}, 
-            document type: ${student.document_type}, document number: ${student.document_number},
-            city of residence: ${student.city_of_residence}, address: ${student.address}, 
-            phone_number: ${student.phone_number}, date born: ${student.date_born}, 
-            sex: ${student.sex}, program'id: ${student.program_id}
-            `;
-        ul.appendChild(li);
-    }
-
-    listStudents.innerHTML='';
-    listStudents.appendChild(ul);
+    const textStudents = document.getElementById('show-info');
+    textStudents.innerHTML=`
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Document Type</th>
+                        <th>Document Number</th>
+                        <th>City of Residence</th>
+                        <th>Address</th>
+                        <th>Phone Number</th>
+                        <th>Date born</th>
+                        <th>Sex</th>
+                        <th>Program'id</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    `;
+    showListInTable("students", studentsList, "studentsTableBody", fieldsStudents);
 }

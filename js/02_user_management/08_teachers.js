@@ -86,21 +86,25 @@ const createTeacher=async()=>{
 // ------------- SHOW LIST OF TEACHERS --------------------------
 
 const showListTeachers=async()=>{
-    await loadJson("teachers", teachersList, "TEACHERS");
-    const listTeachers=document.getElementById("show-info");
-    
-    const ul=document.createElement('ul');
-
-    for(const teacher of teachersList){
-        const li=document.createElement('li');
-        li.textContent= `
-            id: ${teacher.id}, document type: ${teacher.document_type}, 
-            document number: ${teacher.document_number}, name: ${teacher.name}, 
-            last name: ${teacher.last_name}, department'id: ${teacher.department_id}
-            `;
-        ul.appendChild(li);
-    }
-
-    listTeachers.innerHTML='';
-    listTeachers.appendChild(ul);
+    const textTeachers = document.getElementById('show-info');
+    textTeachers.innerHTML=`
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Document Type</th>
+                        <th>Document Number</th>
+                        <th>Name</th>
+                        <th>Last Name</th>
+                        <th>Department'id</th>
+                    </tr>
+                </thead>
+                <tbody id="teachersTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    `;
+    showListInTable("teachers", teachersList, "teachersTableBody", fieldsTeachers);
 }
