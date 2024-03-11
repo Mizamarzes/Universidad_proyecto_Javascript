@@ -1,22 +1,25 @@
 const programsList=[];
 
-// ------------- SHOW LIST OF PROGRAMS --------------------------
+// ------------- CREATE STRUCTURE PROGRAMS --------------------------
 
-const showListPrograms=async()=>{
-    await loadJson("programs", programsList, "PROGRAMS");
-    const listPrograms=document.getElementById("show-info");
-    
-    const ul=document.createElement('ul');
-
-    for(const program of programsList){
-        const li=document.createElement('li');
-        li.textContent= `
-            id: ${program.id}, name of program: ${program.name}, 
-            year: ${program.level}
-            `;
-        ul.appendChild(li);
-    }
-
-    listPrograms.innerHTML='';
-    listPrograms.appendChild(ul);
+const loadStructurePrograms=()=>{
+    const textPrograms = document.getElementById('show-info');
+    textPrograms.innerHTML=`
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name of Program</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody id="programTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    `;
+    showListInTable("programs", programsList, "programTableBody", fieldsPrograms)
 }
+

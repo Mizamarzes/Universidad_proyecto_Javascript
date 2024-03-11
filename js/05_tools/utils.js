@@ -39,6 +39,46 @@ const saveJson= async(url, newItem, messageSecurity)=>{
     }
 }
 
+// ------------- FUNCTION FOR SHOW THE LISTS --------------------------
+
+const fieldsPeriods = ["id", "code", "year", "semester"];
+const fieldsPrograms = ["id", "name", "level"];
+const fieldsTariffs = ["id", "credit_cost", "period_id", "program_id"];
+const fieldsDepartments =["id", "name"];
+const fieldsTeachers =[
+    "id", "document_type", "document_number", "name", "last_name", 
+    "department_id"
+];
+const fieldsStudents =[
+    "id", "name", "last_name", "document_type", "document_number",
+    "city_of_residence", "address", "phone_number", "date_born",
+    "sex", "program_id"
+];
+const fieldsCourses =["id", "name", "code", "chair_guide"];
+const fieldsSalons =[
+    "id", "student_capacity", "building", "floor", "identification_number"
+];
+const fieldsAsignatures =[];
+const fieldsMatriculates = [
+    "id", "student_id", "asignature_id", "period_id", "price"
+];
+
+const showListInTable = async (url, dataList, tableBodyId, fields) => {
+    await loadJson(url, dataList, "LISTA");
+    const tableBody = document.getElementById(tableBodyId);
+    tableBody.innerHTML = '';
+
+    for (const dataItem of dataList) {
+        const tr = document.createElement('tr');
+        let rowData = '';
+        for (const field of fields) {
+            rowData += `<td>${dataItem[field]}</td>`;
+        }
+        tr.innerHTML = rowData;
+        tableBody.appendChild(tr);
+    }
+}
+
 // ------------- SCHEDULE SYSTEM --------------------------
 
 const daysList=[];

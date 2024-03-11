@@ -2,21 +2,24 @@ const coursesList=[];
 
 // ------------- SHOW LIST OF COURSES --------------------------
 
-const showListCourses=async()=>{
-    await loadJson("courses", coursesList, "COURSES");
-    const listCourses=document.getElementById("show-info");
-    
-    const ul=document.createElement('ul');
-
-    for(const course of coursesList){
-        const li=document.createElement('li');
-        li.textContent= `
-            id: ${course.id}, name: ${course.name}, code: ${course.code},
-            chair guide: ${course.chair_guide}
-            `;
-        ul.appendChild(li);
-    }
-    
-    listCourses.innerHTML='';
-    listCourses.appendChild(ul);
+const loadStructureCourses=()=>{
+    const textCourses = document.getElementById('show-info');
+    textCourses.innerHTML=`
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Code</th>
+                        <th>Chair guide</th>
+                    </tr>
+                </thead>
+                <tbody id="coursesTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    `;
+    showListInTable("courses", coursesList, "coursesTableBody", fieldsCourses);
 }

@@ -2,20 +2,22 @@ const departmentsList=[];
 
 // ------------- SHOW LIST OF DEPARTMENTS --------------------------
 
-const showListDepartments=async()=>{
-    await loadJson("departments", departmentsList, "DEPARTMENTS");
-    const listDepartments=document.getElementById("show-info");
-    
-    const ul=document.createElement('ul');
-
-    for(const deparment of departmentsList){
-        const li=document.createElement('li');
-        li.textContent= `
-            id: ${deparment.id}, name of deparment: ${deparment.name}
-            `;
-        ul.appendChild(li);
-    }
-    
-    listDepartments.innerHTML='';
-    listDepartments.appendChild(ul);
+const loadStructureDepartments=()=>{
+    const textDepartments = document.getElementById('show-info');
+    textDepartments.innerHTML=`
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody id="departmentsTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    `;
+    showListInTable("departments", departmentsList, "departmentsTableBody", fieldsDepartments);
 }
