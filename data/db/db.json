@@ -5,6 +5,12 @@
       "code": "P24-01",
       "year": 2024,
       "semester": 1
+    },
+    {
+      "id": "2",
+      "code": "P24-02",
+      "year": 2024,
+      "semester": 2
     }
   ],
   "programs": [
@@ -17,20 +23,168 @@
       "id": "2",
       "name": "Mechatronics Engineering",
       "level": "Undergraduate"
+    },
+    {
+      "id": "3",
+      "name": "Computer Science",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "4",
+      "name": "Electrical Engineering",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "5",
+      "name": "Civil Engineering",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "6",
+      "name": "Business Administration",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "7",
+      "name": "Environmental Engineering",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "8",
+      "name": "Software Engineering",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "9",
+      "name": "Industrial Engineering",
+      "level": "Undergraduate"
+    },
+    {
+      "id": "10",
+      "name": "Biomedical Engineering",
+      "level": "Undergraduate"
     }
   ],
   "tariffs": [
     {
       "id": "1",
-      "credit_cost": 1000,
+      "credit_cost": 800,
       "period_id": 1,
       "program_id": 1
     },
     {
       "id": "2",
-      "credit_cost": 1100,
+      "credit_cost": 900,
       "period_id": 1,
       "program_id": 2
+    },
+    {
+      "id": "3",
+      "credit_cost": 1100,
+      "period_id": 1,
+      "program_id": 3
+    },
+    {
+      "id": "4",
+      "credit_cost": 950,
+      "period_id": 1,
+      "program_id": 4
+    },
+    {
+      "id": "5",
+      "credit_cost": 850,
+      "period_id": 1,
+      "program_id": 5
+    },
+    {
+      "id": "6",
+      "credit_cost": 1200,
+      "period_id": 1,
+      "program_id": 6
+    },
+    {
+      "id": "7",
+      "credit_cost": 1000,
+      "period_id": 1,
+      "program_id": 7
+    },
+    {
+      "id": "8",
+      "credit_cost": 1100,
+      "period_id": 1,
+      "program_id": 8
+    },
+    {
+      "id": "9",
+      "credit_cost": 950,
+      "period_id": 1,
+      "program_id": 9
+    },
+    {
+      "id": "10",
+      "credit_cost": 900,
+      "period_id": 1,
+      "program_id": 10
+    },
+    {
+      "id": "11",
+      "credit_cost": 850,
+      "period_id": 2,
+      "program_id": 1
+    },
+    {
+      "id": "12",
+      "credit_cost": 950,
+      "period_id": 2,
+      "program_id": 2
+    },
+    {
+      "id": "13",
+      "credit_cost": 1050,
+      "period_id": 2,
+      "program_id": 3
+    },
+    {
+      "id": "14",
+      "credit_cost": 1000,
+      "period_id": 2,
+      "program_id": 4
+    },
+    {
+      "id": "15",
+      "credit_cost": 900,
+      "period_id": 2,
+      "program_id": 5
+    },
+    {
+      "id": "16",
+      "credit_cost": 1100,
+      "period_id": 2,
+      "program_id": 6
+    },
+    {
+      "id": "17",
+      "credit_cost": 950,
+      "period_id": 2,
+      "program_id": 7
+    },
+    {
+      "id": "18",
+      "credit_cost": 1050,
+      "period_id": 2,
+      "program_id": 8
+    },
+    {
+      "id": "19",
+      "credit_cost": 1000,
+      "period_id": 2,
+      "program_id": 9
+    },
+    {
+      "id": "20",
+      "credit_cost": 950,
+      "period_id": 2,
+      "program_id": 10
     }
   ],
   "departments": [
@@ -41,6 +195,18 @@
     {
       "id": "2",
       "name": "Mathematics Department"
+    },
+    {
+      "id": "3",
+      "name": "Physics Department"
+    },
+    {
+      "id": "4",
+      "name": "Chemistry Department"
+    },
+    {
+      "id": "5",
+      "name": "Biology Department"
     }
   ],
   "teachers": [
@@ -55,34 +221,234 @@
     {
       "id": "2",
       "document_type": "CC",
-      "document_number": "137880000",
+      "document_number": "24896321",
       "name": "María",
-      "last_name": "Gómez",
+      "last_name": "López",
       "department_id": 2
     },
     {
       "id": "3",
       "document_type": "CC",
-      "document_number": "412414",
-      "name": "carlos",
-      "last_name": "peñaloza",
-      "department_id": 1
+      "document_number": "37658941",
+      "name": "Pedro",
+      "last_name": "García",
+      "department_id": 3
     },
     {
       "id": "4",
-      "document_type": "TI",
-      "document_number": "23131",
-      "name": "asdasdsadadasdad",
-      "last_name": "asdad",
-      "department_id": "1"
+      "document_type": "CC",
+      "document_number": "15975368",
+      "name": "Ana",
+      "last_name": "Martínez",
+      "department_id": 4
     },
     {
       "id": "5",
-      "document_type": "CE",
-      "document_number": "2414142",
-      "name": "komanche",
-      "last_name": "asdadad",
+      "document_type": "CC",
+      "document_number": "45612378",
+      "name": "Carlos",
+      "last_name": "Rodríguez",
+      "department_id": 5
+    },
+    {
+      "id": "6",
+      "document_type": "CC",
+      "document_number": "98765432",
+      "name": "Laura",
+      "last_name": "Fernández",
+      "department_id": 1
+    },
+    {
+      "id": "7",
+      "document_type": "CC",
+      "document_number": "36985214",
+      "name": "Pablo",
+      "last_name": "Sánchez",
       "department_id": 2
+    },
+    {
+      "id": "8",
+      "document_type": "CC",
+      "document_number": "78541236",
+      "name": "Elena",
+      "last_name": "Gómez",
+      "department_id": 3
+    },
+    {
+      "id": "9",
+      "document_type": "CC",
+      "document_number": "65498732",
+      "name": "Fernando",
+      "last_name": "Pérez",
+      "department_id": 4
+    },
+    {
+      "id": "10",
+      "document_type": "CC",
+      "document_number": "12369874",
+      "name": "Sofía",
+      "last_name": "Martín",
+      "department_id": 5
+    },
+    {
+      "id": "11",
+      "document_type": "CC",
+      "document_number": "23654789",
+      "name": "Diego",
+      "last_name": "Hernández",
+      "department_id": 1
+    },
+    {
+      "id": "12",
+      "document_type": "CC",
+      "document_number": "14725836",
+      "name": "Carmen",
+      "last_name": "Pérez",
+      "department_id": 2
+    },
+    {
+      "id": "13",
+      "document_type": "CC",
+      "document_number": "36987412",
+      "name": "Javier",
+      "last_name": "García",
+      "department_id": 3
+    },
+    {
+      "id": "14",
+      "document_type": "CC",
+      "document_number": "98741236",
+      "name": "Luisa",
+      "last_name": "López",
+      "department_id": 4
+    },
+    {
+      "id": "15",
+      "document_type": "CC",
+      "document_number": "65412398",
+      "name": "Andrés",
+      "last_name": "Martínez",
+      "department_id": 5
+    },
+    {
+      "id": "16",
+      "document_type": "CC",
+      "document_number": "14789632",
+      "name": "Paula",
+      "last_name": "Fernández",
+      "department_id": 1
+    },
+    {
+      "id": "17",
+      "document_type": "CC",
+      "document_number": "36985214",
+      "name": "Roberto",
+      "last_name": "Sánchez",
+      "department_id": 2
+    },
+    {
+      "id": "18",
+      "document_type": "CC",
+      "document_number": "78541236",
+      "name": "Isabel",
+      "last_name": "Gómez",
+      "department_id": 3
+    },
+    {
+      "id": "19",
+      "document_type": "CC",
+      "document_number": "65498732",
+      "name": "José",
+      "last_name": "Pérez",
+      "department_id": 4
+    },
+    {
+      "id": "20",
+      "document_type": "CC",
+      "document_number": "12369874",
+      "name": "Eva",
+      "last_name": "Martín",
+      "department_id": 5
+    },
+    {
+      "id": "21",
+      "document_type": "CC",
+      "document_number": "23654789",
+      "name": "Lucas",
+      "last_name": "Hernández",
+      "department_id": 1
+    },
+    {
+      "id": "22",
+      "document_type": "CC",
+      "document_number": "14725836",
+      "name": "Marta",
+      "last_name": "Pérez",
+      "department_id": 2
+    },
+    {
+      "id": "23",
+      "document_type": "CC",
+      "document_number": "36987412",
+      "name": "Alejandro",
+      "last_name": "García",
+      "department_id": 3
+    },
+    {
+      "id": "24",
+      "document_type": "CC",
+      "document_number": "98741236",
+      "name": "Sara",
+      "last_name": "López",
+      "department_id": 4
+    },
+    {
+      "id": "25",
+      "document_type": "CC",
+      "document_number": "65412398",
+      "name": "Antonio",
+      "last_name": "Martínez",
+      "department_id": 5
+    },
+    {
+      "id": "26",
+      "document_type": "CC",
+      "document_number": "14789632",
+      "name": "Valeria",
+      "last_name": "Fernández",
+      "department_id": 1
+    },
+    {
+      "id": "27",
+      "document_type": "CC",
+      "document_number": "36985214",
+      "name": "Gonzalo",
+      "last_name": "Sánchez",
+      "department_id": 2
+    },
+    {
+      "id": "28",
+      "document_type": "CC",
+      "document_number": "78541236",
+      "name": "Marina",
+      "last_name": "Gómez",
+      "department_id": 3
+    },
+    {
+      "id": "29",
+      "document_type": "CC",
+      "document_number": "65498732",
+      "name": "Roberta",
+      "last_name": "Pérez",
+      "department_id": 4
+    },
+    {
+      "id": "30",
+      "document_type": "CC",
+      "document_number": "12369874",
+      "name": "Mario",
+      "last_name": "Martín",
+      "department_id": 5
     }
   ],
   "students": [
@@ -101,55 +467,640 @@
     },
     {
       "id": "2",
-      "name": "Ana",
-      "last_name": "Martínez",
-      "document_type": "CE",
+      "name": "María",
+      "last_name": "López",
+      "document_type": "CC",
       "document_number": "987654321",
       "city_of_residence": "Medellín",
       "address": "Carrera 456",
       "phone_number": "0987654321",
-      "date_born": "1992-05-15",
+      "date_born": "1992-03-15",
       "sex": "Female",
       "program_id": 2
     },
     {
       "id": "3",
-      "name": "juanito",
-      "last_name": "juanito contreras melendez",
-      "document_type": "C.C",
-      "document_number": "109819238912389",
-      "city_of_residence": "asdsadas",
-      "address": "asdasdsad",
-      "phone_number": "132421314",
-      "date_born": "14214-12-04",
-      "sex": "option1",
-      "program_id": 1
+      "name": "Juan",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "456789123",
+      "city_of_residence": "Cali",
+      "address": "Avenida 789",
+      "phone_number": "4567891230",
+      "date_born": "1995-07-20",
+      "sex": "Male",
+      "program_id": 3
     },
     {
       "id": "4",
-      "name": "asdas",
-      "last_name": "dasda",
+      "name": "Ana",
+      "last_name": "Martínez",
       "document_type": "CC",
-      "document_number": "2131",
-      "city_of_residence": "123",
-      "address": "312",
-      "phone_number": "12312",
-      "date_born": "2131-03-12",
-      "sex": "male",
+      "document_number": "321654987",
+      "city_of_residence": "Barranquilla",
+      "address": "Calle 987",
+      "phone_number": "3216549870",
+      "date_born": "1993-11-10",
+      "sex": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "5",
+      "name": "Pedro",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Cartagena",
+      "address": "Carrera 654",
+      "phone_number": "7894561230",
+      "date_born": "1991-05-25",
+      "sex": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "6",
+      "name": "Laura",
+      "last_name": "Fernández",
+      "document_type": "CC",
+      "document_number": "654987321",
+      "city_of_residence": "Pasto",
+      "address": "Avenida 147",
+      "phone_number": "6549873210",
+      "date_born": "1994-09-18",
+      "sex": "Female",
+      "program_id": 6
+    },
+    {
+      "id": "7",
+      "name": "Diego",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "987321654",
+      "city_of_residence": "Cúcuta",
+      "address": "Calle 852",
+      "phone_number": "9873216540",
+      "date_born": "1996-12-05",
+      "sex": "Male",
+      "program_id": 7
+    },
+    {
+      "id": "8",
+      "name": "Carmen",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "147852369",
+      "city_of_residence": "Villavicencio",
+      "address": "Carrera 369",
+      "phone_number": "1478523690",
+      "date_born": "1998-02-28",
+      "sex": "Female",
+      "program_id": 8
+    },
+    {
+      "id": "9",
+      "name": "Javier",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "852369147",
+      "city_of_residence": "Santa Marta",
+      "address": "Avenida 236",
+      "phone_number": "8523691470",
+      "date_born": "1997-06-13",
+      "sex": "Male",
+      "program_id": 9
+    },
+    {
+      "id": "10",
+      "name": "Sofía",
+      "last_name": "Martín",
+      "document_type": "CC",
+      "document_number": "369147852",
+      "city_of_residence": "Pereira",
+      "address": "Calle 963",
+      "phone_number": "3691478520",
+      "date_born": "2000-08-07",
+      "sex": "Female",
+      "program_id": 10
+    },
+    {
+      "id": "11",
+      "name": "Luis",
+      "last_name": "Fernández",
+      "document_type": "CC",
+      "document_number": "741852963",
+      "city_of_residence": "Manizales",
+      "address": "Carrera 852",
+      "phone_number": "7418529630",
+      "date_born": "1999-10-20",
+      "sex": "Male",
       "program_id": 1
     },
     {
-      "id": 5,
-      "name": "PANAMA",
-      "last_name": "asdada",
-      "document_type": "TI",
-      "document_number": "1313123",
-      "city_of_residence": "asddads",
-      "address": "asdasd",
-      "phone_number": "21421",
-      "date_born": "4214-02-14",
-      "sex": "female",
+      "id": "12",
+      "name": "Elena",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "258147369",
+      "city_of_residence": "Ibagué",
+      "address": "Avenida 741",
+      "phone_number": "2581473690",
+      "date_born": "1992-04-15",
+      "sex": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "13",
+      "name": "Miguel",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "963852741",
+      "city_of_residence": "Cali",
+      "address": "Calle 369",
+      "phone_number": "9638527410",
+      "date_born": "1995-08-30",
+      "sex": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "14",
+      "name": "Lucía",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "147369258",
+      "city_of_residence": "Barranquilla",
+      "address": "Carrera 258",
+      "phone_number": "1473692580",
+      "date_born": "1993-12-25",
+      "sex": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "15",
+      "name": "Martín",
+      "last_name": "Martínez",
+      "document_type": "CC",
+      "document_number": "852741963",
+      "city_of_residence": "Cartagena",
+      "address": "Avenida 123",
+      "phone_number": "8527419630",
+      "date_born": "1991-06-05",
+      "sex": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "16",
+      "name": "Julia",
+      "last_name": "González",
+      "document_type": "CC",
+      "document_number": "369258147",
+      "city_of_residence": "Pasto",
+      "address": "Calle 456",
+      "phone_number": "3692581470",
+      "date_born": "1994-11-18",
+      "sex": "Female",
+      "program_id": 6
+    },
+    {
+      "id": "17",
+      "name": "Pedro",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "741963852",
+      "city_of_residence": "Cúcuta",
+      "address": "Carrera 147",
+      "phone_number": "7419638520",
+      "date_born": "1996-02-10",
+      "sex": "Male",
+      "program_id": 7
+    },
+    {
+      "id": "18",
+      "name": "Catalina",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "258369147",
+      "city_of_residence": "Villavicencio",
+      "address": "Avenida 789",
+      "phone_number": "2583691470",
+      "date_born": "1998-07-28",
+      "sex": "Female",
+      "program_id": 8
+    },
+    {
+      "id": "19",
+      "name": "Andrés",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "963741852",
+      "city_of_residence": "Santa Marta",
+      "address": "Calle 852",
+      "phone_number": "9637418520",
+      "date_born": "1997-03-13",
+      "sex": "Male",
+      "program_id": 9
+    },
+    {
+      "id": "20",
+      "name": "Camila",
+      "last_name": "Martín",
+      "document_type": "CC",
+      "document_number": "369741852",
+      "city_of_residence": "Pereira",
+      "address": "Carrera 654",
+      "phone_number": "3697418520",
+      "date_born": "2000-09-07",
+      "sex": "Female",
+      "program_id": 10
+    },
+    {
+      "id": "21",
+      "name": "Gabriel",
+      "last_name": "Fernández",
+      "document_type": "CC",
+      "document_number": "147963852",
+      "city_of_residence": "Manizales",
+      "address": "Avenida 456",
+      "phone_number": "1479638520",
+      "date_born": "1999-11-20",
+      "sex": "Male",
       "program_id": 1
+    },
+    {
+      "id": "22",
+      "name": "Isabel",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "258369147",
+      "city_of_residence": "Ibagué",
+      "address": "Calle 123",
+      "phone_number": "2583691470",
+      "date_born": "1992-12-15",
+      "sex": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "23",
+      "name": "Fernando",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "963147258",
+      "city_of_residence": "Cali",
+      "address": "Carrera 789",
+      "phone_number": "9631472580",
+      "date_born": "1995-09-30",
+      "sex": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "24",
+      "name": "Gabriela",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "147258369",
+      "city_of_residence": "Barranquilla",
+      "address": "Avenida 789",
+      "phone_number": "1472583690",
+      "date_born": "1993-01-25",
+      "sex": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "25",
+      "name": "Mateo",
+      "last_name": "Martínez",
+      "document_type": "CC",
+      "document_number": "258369147",
+      "city_of_residence": "Cartagena",
+      "address": "Calle 456",
+      "phone_number": "2583691470",
+      "date_born": "1991-07-05",
+      "sex": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "26",
+      "name": "Natalia",
+      "last_name": "González",
+      "document_type": "CC",
+      "document_number": "369741852",
+      "city_of_residence": "Pasto",
+      "address": "Carrera 852",
+      "phone_number": "3697418520",
+      "date_born": "1994-12-18",
+      "sex": "Female",
+      "program_id": 6
+    },
+    {
+      "id": "27",
+      "name": "Alejandro",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "741852963",
+      "city_of_residence": "Cúcuta",
+      "address": "Avenida 147",
+      "phone_number": "7418529630",
+      "date_born": "1996-03-10",
+      "sex": "Male",
+      "program_id": 7
+    },
+    {
+      "id": "28",
+      "name": "Valentina",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "852963741",
+      "city_of_residence": "Villavicencio",
+      "address": "Calle 369",
+      "phone_number": "8529637410",
+      "date_born": "1998-08-28",
+      "sex": "Female",
+      "program_id": 8
+    },
+    {
+      "id": "29",
+      "name": "Daniel",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "963147852",
+      "city_of_residence": "Santa Marta",
+      "address": "Carrera 852",
+      "phone_number": "9631478520",
+      "date_born": "1997-04-13",
+      "sex": "Male",
+      "program_id": 9
+    },
+    {
+      "id": "30",
+      "name": "Lucas",
+      "last_name": "Martín",
+      "document_type": "CC",
+      "document_number": "147852369",
+      "city_of_residence": "Pereira",
+      "address": "Avenida 654",
+      "phone_number": "1478523690",
+      "date_born": "2000-10-07",
+      "sex": "Male",
+      "program_id": 10
+    },
+    {
+      "id": "31",
+      "name": "Ana",
+      "last_name": "Fernández",
+      "document_type": "CC",
+      "document_number": "123789456",
+      "city_of_residence": "Manizales",
+      "address": "Calle 456",
+      "phone_number": "1237894560",
+      "date_born": "1999-12-20",
+      "sex": "Female",
+      "program_id": 1
+    },
+    {
+      "id": "32",
+      "name": "Pablo",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "456123789",
+      "city_of_residence": "Ibagué",
+      "address": "Carrera 963",
+      "phone_number": "4561237890",
+      "date_born": "1992-01-15",
+      "sex": "Male",
+      "program_id": 2
+    },
+    {
+      "id": "33",
+      "name": "Marina",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Cali",
+      "address": "Avenida 147",
+      "phone_number": "7894561230",
+      "date_born": "1995-09-30",
+      "sex": "Female",
+      "program_id": 3
+    },
+    {
+      "id": "34",
+      "name": "Felipe",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "123789456",
+      "city_of_residence": "Barranquilla",
+      "address": "Calle 369",
+      "phone_number": "1237894560",
+      "date_born": "1993-02-25",
+      "sex": "Male",
+      "program_id": 4
+    },
+    {
+      "id": "35",
+      "name": "Lucía",
+      "last_name": "Martínez",
+      "document_type": "CC",
+      "document_number": "456123789",
+      "city_of_residence": "Cartagena",
+      "address": "Carrera 789",
+      "phone_number": "4561237890",
+      "date_born": "1991-08-05",
+      "sex": "Female",
+      "program_id": 5
+    },
+    {
+      "id": "36",
+      "name": "David",
+      "last_name": "González",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Pasto",
+      "address": "Avenida 654",
+      "phone_number": "7894561230",
+      "date_born": "1994-01-18",
+      "sex": "Male",
+      "program_id": 6
+    },
+    {
+      "id": "37",
+      "name": "Valeria",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "123789456",
+      "city_of_residence": "Cúcuta",
+      "address": "Calle 852",
+      "phone_number": "1237894560",
+      "date_born": "1996-04-10",
+      "sex": "Female",
+      "program_id": 7
+    },
+    {
+      "id": "38",
+      "name": "Juan",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "456123789",
+      "city_of_residence": "Villavicencio",
+      "address": "Carrera 147",
+      "phone_number": "4561237890",
+      "date_born": "1998-09-28",
+      "sex": "Male",
+      "program_id": 8
+    },
+    {
+      "id": "39",
+      "name": "Valentina",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Santa Marta",
+      "address": "Avenida 369",
+      "phone_number": "7894561230",
+      "date_born": "1997-05-13",
+      "sex": "Female",
+      "program_id": 9
+    },
+    {
+      "id": "40",
+      "name": "Andrea",
+      "last_name": "Martín",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Pereira",
+      "address": "Calle 852",
+      "phone_number": "1234567890",
+      "date_born": "2000-11-07",
+      "sex": "Female",
+      "program_id": 10
+    },
+    {
+      "id": "41",
+      "name": "José",
+      "last_name": "Fernández",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Manizales",
+      "address": "Avenida 963",
+      "phone_number": "7894561230",
+      "date_born": "1999-01-20",
+      "sex": "Male",
+      "program_id": 1
+    },
+    {
+      "id": "42",
+      "name": "Diana",
+      "last_name": "Sánchez",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Ibagué",
+      "address": "Calle 147",
+      "phone_number": "1234567890",
+      "date_born": "1992-02-15",
+      "sex": "Female",
+      "program_id": 2
+    },
+    {
+      "id": "43",
+      "name": "Jorge",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Cali",
+      "address": "Carrera 789",
+      "phone_number": "7894561230",
+      "date_born": "1995-10-30",
+      "sex": "Male",
+      "program_id": 3
+    },
+    {
+      "id": "44",
+      "name": "Carolina",
+      "last_name": "Hernández",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Barranquilla",
+      "address": "Avenida 369",
+      "phone_number": "1234567890",
+      "date_born": "1993-03-25",
+      "sex": "Female",
+      "program_id": 4
+    },
+    {
+      "id": "45",
+      "name": "Fernando",
+      "last_name": "Martínez",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Cartagena",
+      "address": "Calle 789",
+      "phone_number": "7894561230",
+      "date_born": "1991-09-05",
+      "sex": "Male",
+      "program_id": 5
+    },
+    {
+      "id": "46",
+      "name": "Valeria",
+      "last_name": "González",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Pasto",
+      "address": "Carrera 654",
+      "phone_number": "1234567890",
+      "date_born": "1994-02-18",
+      "sex": "Female",
+      "program_id": 6
+    },
+    {
+      "id": "47",
+      "name": "Martín",
+      "last_name": "Pérez",
+      "document_type": "CC",
+      "document_number": "789456123",
+      "city_of_residence": "Cúcuta",
+      "address": "Avenida 147",
+      "phone_number": "7894561230",
+      "date_born": "1996-05-10",
+      "sex": "Male",
+      "program_id": 7
+    },
+    {
+      "id": "48",
+      "name": "Carolina",
+      "last_name": "Gómez",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Villavicencio",
+      "address": "Calle 369",
+      "phone_number": "1234567890",
+      "date_born": "1998-10-28",
+      "sex": "Female",
+      "program_id": 8
+    },
+    {
+      "id": "49",
+      "name": "Alejandro",
+      "last_name": "García",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Santa Marta",
+      "address": "Carrera 852",
+      "phone_number": "1234567890",
+      "date_born": "1997-06-13",
+      "sex": "Male",
+      "program_id": 9
+    },
+    {
+      "id": "50",
+      "name": "Valentina",
+      "last_name": "Martín",
+      "document_type": "CC",
+      "document_number": "123456789",
+      "city_of_residence": "Pereira",
+      "address": "Avenida 369",
+      "phone_number": "1234567890",
+      "date_born": "2000-11-07",
+      "sex": "Female",
+      "program_id": 10
     }
   ],
   "courses": [
@@ -157,13 +1108,181 @@
       "id": "1",
       "name": "Advanced Programming",
       "code": "PROG-AVA",
-      "chair_guide": "URL_Chair_Guide.pdf"
+      "chair_guide": "URL_Chair_Guide_1.pdf"
     },
     {
       "id": "2",
-      "name": "Linear Algebra",
-      "code": "ALG-LI",
-      "chair_guide": "URL_Chair_Guide.pdf"
+      "name": "Database Management",
+      "code": "DB-MGT",
+      "chair_guide": "URL_Chair_Guide_2.pdf"
+    },
+    {
+      "id": "3",
+      "name": "Web Development",
+      "code": "WEB-DEV",
+      "chair_guide": "URL_Chair_Guide_3.pdf"
+    },
+    {
+      "id": "4",
+      "name": "Software Engineering Principles",
+      "code": "SE-PRIN",
+      "chair_guide": "URL_Chair_Guide_4.pdf"
+    },
+    {
+      "id": "5",
+      "name": "Data Structures and Algorithms",
+      "code": "DSA",
+      "chair_guide": "URL_Chair_Guide_5.pdf"
+    },
+    {
+      "id": "6",
+      "name": "Computer Networks",
+      "code": "COMP-NET",
+      "chair_guide": "URL_Chair_Guide_6.pdf"
+    },
+    {
+      "id": "7",
+      "name": "Artificial Intelligence",
+      "code": "AI",
+      "chair_guide": "URL_Chair_Guide_7.pdf"
+    },
+    {
+      "id": "8",
+      "name": "Mobile App Development",
+      "code": "MOB-APP-DEV",
+      "chair_guide": "URL_Chair_Guide_8.pdf"
+    },
+    {
+      "id": "9",
+      "name": "Cybersecurity Fundamentals",
+      "code": "CYBER-SEC",
+      "chair_guide": "URL_Chair_Guide_9.pdf"
+    },
+    {
+      "id": "10",
+      "name": "Cloud Computing",
+      "code": "CLOUD-COMP",
+      "chair_guide": "URL_Chair_Guide_10.pdf"
+    },
+    {
+      "id": "11",
+      "name": "Digital Marketing",
+      "code": "DIGI-MKT",
+      "chair_guide": "URL_Chair_Guide_11.pdf"
+    },
+    {
+      "id": "12",
+      "name": "Human-Computer Interaction",
+      "code": "HCI",
+      "chair_guide": "URL_Chair_Guide_12.pdf"
+    },
+    {
+      "id": "13",
+      "name": "Big Data Analytics",
+      "code": "BIG-DATA",
+      "chair_guide": "URL_Chair_Guide_13.pdf"
+    },
+    {
+      "id": "14",
+      "name": "Machine Learning",
+      "code": "ML",
+      "chair_guide": "URL_Chair_Guide_14.pdf"
+    },
+    {
+      "id": "15",
+      "name": "Internet of Things",
+      "code": "IOT",
+      "chair_guide": "URL_Chair_Guide_15.pdf"
+    },
+    {
+      "id": "16",
+      "name": "Game Development",
+      "code": "GAME-DEV",
+      "chair_guide": "URL_Chair_Guide_16.pdf"
+    },
+    {
+      "id": "17",
+      "name": "Project Management",
+      "code": "PROJ-MGT",
+      "chair_guide": "URL_Chair_Guide_17.pdf"
+    },
+    {
+      "id": "18",
+      "name": "Computer Graphics",
+      "code": "COMP-GRAPH",
+      "chair_guide": "URL_Chair_Guide_18.pdf"
+    },
+    {
+      "id": "19",
+      "name": "Blockchain Fundamentals",
+      "code": "BLOCKCHAIN",
+      "chair_guide": "URL_Chair_Guide_19.pdf"
+    },
+    {
+      "id": "20",
+      "name": "Natural Language Processing",
+      "code": "NLP",
+      "chair_guide": "URL_Chair_Guide_20.pdf"
+    },
+    {
+      "id": "21",
+      "name": "Robotics",
+      "code": "ROBOTICS",
+      "chair_guide": "URL_Chair_Guide_21.pdf"
+    },
+    {
+      "id": "22",
+      "name": "Ethical Hacking",
+      "code": "ETHICAL-HACK",
+      "chair_guide": "URL_Chair_Guide_22.pdf"
+    },
+    {
+      "id": "23",
+      "name": "Data Mining",
+      "code": "DATA-MIN",
+      "chair_guide": "URL_Chair_Guide_23.pdf"
+    },
+    {
+      "id": "24",
+      "name": "Network Security",
+      "code": "NET-SEC",
+      "chair_guide": "URL_Chair_Guide_24.pdf"
+    },
+    {
+      "id": "25",
+      "name": "Software Testing",
+      "code": "SOFT-TEST",
+      "chair_guide": "URL_Chair_Guide_25.pdf"
+    },
+    {
+      "id": "26",
+      "name": "Cloud Security",
+      "code": "CLOUD-SEC",
+      "chair_guide": "URL_Chair_Guide_26.pdf"
+    },
+    {
+      "id": "27",
+      "name": "Data Visualization",
+      "code": "DATA-VIS",
+      "chair_guide": "URL_Chair_Guide_27.pdf"
+    },
+    {
+      "id": "28",
+      "name": "Embedded Systems",
+      "code": "EMBED-SYS",
+      "chair_guide": "URL_Chair_Guide_28.pdf"
+    },
+    {
+      "id": "29",
+      "name": "Computer Vision",
+      "code": "COMP-VIS",
+      "chair_guide": "URL_Chair_Guide_29.pdf"
+    },
+    {
+      "id": "30",
+      "name": "Quantum Computing",
+      "code": "QUANTUM-COMP",
+      "chair_guide": "URL_Chair_Guide_30.pdf"
     }
   ],
   "salons": [
@@ -173,6 +1292,139 @@
       "building": "Building A",
       "floor": 2,
       "identification_number": "S001"
+    },
+    {
+      "id": "2",
+      "student_capacity": 25,
+      "building": "Building B",
+      "floor": 1,
+      "identification_number": "S002"
+    },
+    {
+      "id": "3",
+      "student_capacity": 35,
+      "building": "Building C",
+      "floor": 3,
+      "identification_number": "S003"
+    },
+    {
+      "id": "4",
+      "student_capacity": 40,
+      "building": "Building A",
+      "floor": 1,
+      "identification_number": "S004"
+    },
+    {
+      "id": "5",
+      "student_capacity": 20,
+      "building": "Building B",
+      "floor": 2,
+      "identification_number": "S005"
+    },
+    {
+      "id": "6",
+      "student_capacity": 30,
+      "building": "Building C",
+      "floor": 1,
+      "identification_number": "S006"
+    },
+    {
+      "id": "7",
+      "student_capacity": 35,
+      "building": "Building A",
+      "floor": 2,
+      "identification_number": "S007"
+    },
+    {
+      "id": "8",
+      "student_capacity": 25,
+      "building": "Building B",
+      "floor": 1,
+      "identification_number": "S008"
+    },
+    {
+      "id": "9",
+      "student_capacity": 40,
+      "building": "Building C",
+      "floor": 3,
+      "identification_number": "S009"
+    },
+    {
+      "id": "10",
+      "student_capacity": 30,
+      "building": "Building A",
+      "floor": 1,
+      "identification_number": "S010"
+    },
+    {
+      "id": "11",
+      "student_capacity": 25,
+      "building": "Building B",
+      "floor": 2,
+      "identification_number": "S011"
+    },
+    {
+      "id": "12",
+      "student_capacity": 35,
+      "building": "Building C",
+      "floor": 1,
+      "identification_number": "S012"
+    },
+    {
+      "id": "13",
+      "student_capacity": 40,
+      "building": "Building A",
+      "floor": 2,
+      "identification_number": "S013"
+    },
+    {
+      "id": "14",
+      "student_capacity": 20,
+      "building": "Building B",
+      "floor": 1,
+      "identification_number": "S014"
+    },
+    {
+      "id": "15",
+      "student_capacity": 30,
+      "building": "Building C",
+      "floor": 3,
+      "identification_number": "S015"
+    },
+    {
+      "id": "16",
+      "student_capacity": 35,
+      "building": "Building A",
+      "floor": 1,
+      "identification_number": "S016"
+    },
+    {
+      "id": "17",
+      "student_capacity": 25,
+      "building": "Building B",
+      "floor": 2,
+      "identification_number": "S017"
+    },
+    {
+      "id": "18",
+      "student_capacity": 40,
+      "building": "Building C",
+      "floor": 1,
+      "identification_number": "S018"
+    },
+    {
+      "id": "19",
+      "student_capacity": 30,
+      "building": "Building A",
+      "floor": 2,
+      "identification_number": "S019"
+    },
+    {
+      "id": "20",
+      "student_capacity": 25,
+      "building": "Building B",
+      "floor": 1,
+      "identification_number": "S020"
     }
   ],
   "asignatures": [
@@ -202,82 +1454,670 @@
     {
       "id": "2",
       "course_id": 2,
-      "code": "ALG-LI-PER-2024",
+      "code": "DB-MGT-PER-2024",
       "credits": 3,
       "teacher_id": 2,
-      "available_quotas": 15,
-      "program_id": 2,
+      "available_quotas": 18,
+      "program_id": 1,
       "class_schedule": [
         {
-          "day": "Monday",
+          "day": "Wednesday",
           "start_time": "10:00",
           "end_time": "12:00",
-          "salon_id": 1
+          "salon_id": 2
         },
         {
           "day": "Thursday",
           "start_time": "10:00",
           "end_time": "12:00",
-          "salon_id": 1
+          "salon_id": 2
         }
       ]
     },
     {
       "id": "3",
-      "course_id": 2,
-      "code": "KOMANCHE LA CABRA",
-      "credits": 3,
-      "teacher_id": 2,
+      "course_id": 3,
+      "code": "WEB-DEV-PER-2024",
+      "credits": 4,
+      "teacher_id": 3,
+      "available_quotas": 22,
       "program_id": 2,
       "class_schedule": [
         {
-          "day": "Wednesday",
-          "start_time": "06:00",
-          "end_time": "08:00",
-          "salon_id": 1
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 3
         },
         {
           "day": "Wednesday",
           "start_time": "08:00",
           "end_time": "10:00",
-          "salon_id": 1
-        },
-        {
-          "day": "Wednesday",
-          "start_time": "10:00",
-          "end_time": "12:00",
-          "salon_id": 1
-        },
-        {
-          "day": "Wednesday",
-          "start_time": "14:00",
-          "end_time": "16:00",
-          "salon_id": 1
-        },
-        {
-          "day": "Wednesday",
-          "start_time": "16:00",
-          "end_time": "18:00",
-          "salon_id": 1
+          "salon_id": 3
         }
       ]
     },
     {
       "id": "4",
-      "course_id": 1,
-      "code": "PEPITO EL MANGO",
-      "credits": 2,
-      "teacher_id": 1,
-      "program_id": 1,
+      "course_id": 4,
+      "code": "SE-PRIN-PER-2024",
+      "credits": 3,
+      "teacher_id": 4,
+      "available_quotas": 17,
+      "program_id": 2,
       "class_schedule": [
         {
           "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 4
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 4
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "course_id": 5,
+      "code": "DSA-PER-2024",
+      "credits": 4,
+      "teacher_id": 5,
+      "available_quotas": 19,
+      "program_id": 3,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 5
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 5
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "course_id": 6,
+      "code": "COMP-NET-PER-2024",
+      "credits": 3,
+      "teacher_id": 6,
+      "available_quotas": 21,
+      "program_id": 3,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "16:00",
+          "end_time": "18:00",
+          "salon_id": 6
+        },
+        {
+          "day": "Thursday",
+          "start_time": "16:00",
+          "end_time": "18:00",
+          "salon_id": 6
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "course_id": 7,
+      "code": "AI-PER-2024",
+      "credits": 4,
+      "teacher_id": 7,
+      "available_quotas": 20,
+      "program_id": 4,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 7
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 7
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "course_id": 8,
+      "code": "MOB-APP-DEV-PER-2024",
+      "credits": 3,
+      "teacher_id": 8,
+      "available_quotas": 18,
+      "program_id": 4,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 8
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 8
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "course_id": 9,
+      "code": "CYBER-SEC-PER-2024",
+      "credits": 4,
+      "teacher_id": 9,
+      "available_quotas": 22,
+      "program_id": 5,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 9
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 9
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "course_id": 10,
+      "code": "CLOUD-COMP-PER-2024",
+      "credits": 3,
+      "teacher_id": 10,
+      "available_quotas": 17,
+      "program_id": 5,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 10
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 10
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "course_id": 11,
+      "code": "DIGI-MKT-PER-2024",
+      "credits": 4,
+      "teacher_id": 11,
+      "available_quotas": 19,
+      "program_id": 6,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 11
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 11
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "course_id": 12,
+      "code": "HCI-PER-2024",
+      "credits": 3,
+      "teacher_id": 12,
+      "available_quotas": 21,
+      "program_id": 6,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "16:00",
+          "end_time": "18:00",
+          "salon_id": 12
+        },
+        {
+          "day": "Thursday",
+          "start_time": "16:00",
+          "end_time": "18:00",
+          "salon_id": 12
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "course_id": 13,
+      "code": "BIG-DATA-PER-2024",
+      "credits": 4,
+      "teacher_id": 13,
+      "available_quotas": 20,
+      "program_id": 7,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 13
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 13
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "course_id": 14,
+      "code": "ML-PER-2024",
+      "credits": 3,
+      "teacher_id": 14,
+      "available_quotas": 18,
+      "program_id": 7,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 14
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 14
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "course_id": 15,
+      "code": "IOT-PER-2024",
+      "credits": 4,
+      "teacher_id": 15,
+      "available_quotas": 22,
+      "program_id": 8,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 15
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 15
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "course_id": 16,
+      "code": "GAME-DEV-PER-2024",
+      "credits": 3,
+      "teacher_id": 16,
+      "available_quotas": 17,
+      "program_id": 8,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 16
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 16
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "course_id": 17,
+      "code": "EMB-SYS-PER-2024",
+      "credits": 4,
+      "teacher_id": 17,
+      "available_quotas": 19,
+      "program_id": 9,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 17
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 17
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "course_id": 18,
+      "code": "ROBOT-PER-2024",
+      "credits": 3,
+      "teacher_id": 18,
+      "available_quotas": 21,
+      "program_id": 9,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "16:00",
+          "end_time": "18:00",
+          "salon_id": 18
+        },
+        {
+          "day": "Thursday",
+          "start_time": "16:00",
+          "end_time": "18:00",
+          "salon_id": 18
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "course_id": 19,
+      "code": "VR-PER-2024",
+      "credits": 4,
+      "teacher_id": 19,
+      "available_quotas": 20,
+      "program_id": 10,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 19
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 19
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "course_id": 20,
+      "code": "BLOCK-CHAIN-PER-2024",
+      "credits": 3,
+      "teacher_id": 20,
+      "available_quotas": 18,
+      "program_id": 10,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 20
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 20
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "course_id": 21,
+      "code": "ART-INTE-PER-2024",
+      "credits": 4,
+      "teacher_id": 21,
+      "available_quotas": 20,
+      "program_id": 1,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 1
+        },
+        {
+          "day": "Wednesday",
           "start_time": "08:00",
           "end_time": "10:00",
           "salon_id": 1
         }
       ]
-    }
+    },
+    {
+      "id": "22",
+      "course_id": 22,
+      "code": "ETHICS-PER-2024",
+      "credits": 3,
+      "teacher_id": 22,
+      "available_quotas": 18,
+      "program_id": 2,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 2
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 2
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "course_id": 23,
+      "code": "BUS-ADMIN-PER-2024",
+      "credits": 4,
+      "teacher_id": 23,
+      "available_quotas": 22,
+      "program_id": 3,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 3
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 3
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "course_id": 24,
+      "code": "SOFT-DEV-PER-2024",
+      "credits": 3,
+      "teacher_id": 24,
+      "available_quotas": 17,
+      "program_id": 4,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 4
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 4
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "course_id": 25,
+      "code": "DATABASE-DESIGN-PER-2024",
+      "credits": 4,
+      "teacher_id": 25,
+      "available_quotas": 18,
+      "program_id": 5,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 5
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 5
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "course_id": 26,
+      "code": "ADVANCED-MATH-PER-2024",
+      "credits": 3,
+      "teacher_id": 26,
+      "available_quotas": 20,
+      "program_id": 6,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 6
+        },
+        {
+          "day": "Thursday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 6
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "course_id": 27,
+      "code": "PHYSICAL-CHEMISTRY-PER-2024",
+      "credits": 4,
+      "teacher_id": 27,
+      "available_quotas": 20,
+      "program_id": 7,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 7
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 7
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "course_id": 28,
+      "code": "ENGLISH-II-PER-2024",
+      "credits": 3,
+      "teacher_id": 28,
+      "available_quotas": 18,
+      "program_id": 8,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 8
+        },
+        {
+          "day": "Thursday",
+          "start_time": "14:00",
+          "end_time": "16:00",
+          "salon_id": 8
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "course_id": 29,
+      "code": "STATISTICS-PER-2024",
+      "credits": 4,
+      "teacher_id": 29,
+      "available_quotas": 19,
+      "program_id": 9,
+      "class_schedule": [
+        {
+          "day": "Monday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 9
+        },
+        {
+          "day": "Wednesday",
+          "start_time": "08:00",
+          "end_time": "10:00",
+          "salon_id": 9
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "course_id": 30,
+      "code": "HISTORY-PER-2024",
+      "credits": 3,
+      "teacher_id": 30,
+      "available_quotas": 18,
+      "program_id": 10,
+      "class_schedule": [
+        {
+          "day": "Tuesday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 10
+        },
+        {
+          "day": "Thursday",
+          "start_time": "10:00",
+          "end_time": "12:00",
+          "salon_id": 10
+        }
+      ]
+    }    
   ],
   "matriculates": [
     {
@@ -302,12 +2142,334 @@
       "price": 3300
     },
     {
-      "id": 4,
-      "student_id": "2",
-      "asignature_id": "1",
+      "id": "4",
+      "student_id": "3",
+      "asignature_id": "3",
+      "period_id": "1",
+      "price": 3500
+    },
+    {
+      "id": "5",
+      "student_id": "4",
+      "asignature_id": "4",
+      "period_id": "1",
+      "price": 3800
+    },
+    {
+      "id": "6",
+      "student_id": "5",
+      "asignature_id": "5",
+      "period_id": "1",
+      "price": 3700
+    },
+    {
+      "id": "7",
+      "student_id": "6",
+      "asignature_id": "6",
+      "period_id": "1",
+      "price": 4100
+    },
+    {
+      "id": "8",
+      "student_id": "7",
+      "asignature_id": "7",
+      "period_id": "1",
+      "price": 4200
+    },
+    {
+      "id": "9",
+      "student_id": "8",
+      "asignature_id": "8",
+      "period_id": "1",
+      "price": 3800
+    },
+    {
+      "id": "10",
+      "student_id": "9",
+      "asignature_id": "9",
+      "period_id": "1",
+      "price": 3900
+    },
+    {
+      "id": "11",
+      "student_id": "10",
+      "asignature_id": "10",
       "period_id": "1",
       "price": 4000
-    }
+    },
+    {
+      "id": "12",
+      "student_id": "11",
+      "asignature_id": "11",
+      "period_id": "1",
+      "price": 4100
+    },
+    {
+      "id": "13",
+      "student_id": "12",
+      "asignature_id": "12",
+      "period_id": "1",
+      "price": 4200
+    },
+    {
+      "id": "14",
+      "student_id": "13",
+      "asignature_id": "13",
+      "period_id": "1",
+      "price": 3700
+    },
+    {
+      "id": "15",
+      "student_id": "14",
+      "asignature_id": "14",
+      "period_id": "1",
+      "price": 3800
+    },
+    {
+      "id": "16",
+      "student_id": "15",
+      "asignature_id": "15",
+      "period_id": "1",
+      "price": 3900
+    },
+    {
+      "id": "17",
+      "student_id": "16",
+      "asignature_id": "16",
+      "period_id": "1",
+      "price": 4000
+    },
+    {
+      "id": "18",
+      "student_id": "17",
+      "asignature_id": "17",
+      "period_id": "1",
+      "price": 4100
+    },
+    {
+      "id": "19",
+      "student_id": "18",
+      "asignature_id": "18",
+      "period_id": "1",
+      "price": 4200
+    },
+    {
+      "id": "20",
+      "student_id": "19",
+      "asignature_id": "19",
+      "period_id": "1",
+      "price": 3700
+    },
+    {
+      "id": "21",
+      "student_id": "20",
+      "asignature_id": "20",
+      "period_id": "1",
+      "price": 3800
+    },
+    {
+      "id": "22",
+      "student_id": "21",
+      "asignature_id": "21",
+      "period_id": "1",
+      "price": 3900
+    },
+    {
+      "id": "23",
+      "student_id": "22",
+      "asignature_id": "22",
+      "period_id": "1",
+      "price": 4000
+    },
+    {
+      "id": "24",
+      "student_id": "23",
+      "asignature_id": "23",
+      "period_id": "1",
+      "price": 4100
+    },
+    {
+      "id": "25",
+      "student_id": "24",
+      "asignature_id": "24",
+      "period_id": "1",
+      "price": 4200
+    },
+    {
+      "id": "26",
+      "student_id": "25",
+      "asignature_id": "1",
+      "period_id": "2",
+      "price": 4000
+    },
+    {
+      "id": "27",
+      "student_id": "26",
+      "asignature_id": "2",
+      "period_id": "2",
+      "price": 3300
+    },
+    {
+      "id": "28",
+      "student_id": "27",
+      "asignature_id": "3",
+      "period_id": "2",
+      "price": 3300
+    },
+    {
+      "id": "29",
+      "student_id": "28",
+      "asignature_id": "4",
+      "period_id": "2",
+      "price": 3500
+    },
+    {
+      "id": "30",
+      "student_id": "29",
+      "asignature_id": "5",
+      "period_id": "2",
+      "price": 3800
+    },
+    {
+      "id": "31",
+      "student_id": "30",
+      "asignature_id": "6",
+      "period_id": "2",
+      "price": 3700
+    },
+    {
+      "id": "32",
+      "student_id": "31",
+      "asignature_id": "7",
+      "period_id": "2",
+      "price": 4100
+    },
+    {
+      "id": "33",
+      "student_id": "32",
+      "asignature_id": "8",
+      "period_id": "2",
+      "price": 4200
+    },
+    {
+      "id": "34",
+      "student_id": "33",
+      "asignature_id": "9",
+      "period_id": "2",
+      "price": 3800
+    },
+    {
+      "id": "35",
+      "student_id": "34",
+      "asignature_id": "10",
+      "period_id": "2",
+      "price": 3900
+    },
+    {
+      "id": "36",
+      "student_id": "35",
+      "asignature_id": "11",
+      "period_id": "2",
+      "price": 4000
+    },
+    {
+      "id": "37",
+      "student_id": "36",
+      "asignature_id": "12",
+      "period_id": "2",
+      "price": 4100
+    },
+    {
+      "id": "38",
+      "student_id": "37",
+      "asignature_id": "13",
+      "period_id": "2",
+      "price": 4200
+    },
+    {
+      "id": "39",
+      "student_id": "38",
+      "asignature_id": "14",
+      "period_id": "2",
+      "price": 3700
+    },
+    {
+      "id": "40",
+      "student_id": "39",
+      "asignature_id": "15",
+      "period_id": "2",
+      "price": 3800
+    },
+    {
+      "id": "41",
+      "student_id": "40",
+      "asignature_id": "16",
+      "period_id": "2",
+      "price": 3900
+    },
+    {
+      "id": "42",
+      "student_id": "41",
+      "asignature_id": "17",
+      "period_id": "2",
+      "price": 4000
+    },
+    {
+      "id": "43",
+      "student_id": "42",
+      "asignature_id": "18",
+      "period_id": "2",
+      "price": 4100
+    },
+    {
+      "id": "44",
+      "student_id": "43",
+      "asignature_id": "19",
+      "period_id": "2",
+      "price": 4200
+    },
+    {
+      "id": "45",
+      "student_id": "44",
+      "asignature_id": "20",
+      "period_id": "2",
+      "price": 3700
+    },
+    {
+      "id": "46",
+      "student_id": "45",
+      "asignature_id": "21",
+      "period_id": "2",
+      "price": 3800
+    },
+    {
+      "id": "47",
+      "student_id": "46",
+      "asignature_id": "22",
+      "period_id": "2",
+      "price": 3900
+    },
+    {
+      "id": "48",
+      "student_id": "47",
+      "asignature_id": "23",
+      "period_id": "2",
+      "price": 4000
+    },
+    {
+      "id": "49",
+      "student_id": "48",
+      "asignature_id": "24",
+      "period_id": "2",
+      "price": 4100
+    },
+    {
+      "id": "50",
+      "student_id": "49",
+      "asignature_id": "25",
+      "period_id": "2",
+      "price": 4200
+    }  
   ],
   "schedules": [
     {

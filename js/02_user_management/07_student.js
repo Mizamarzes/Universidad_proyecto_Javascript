@@ -73,6 +73,13 @@ const loadFormStudents=()=>{
                 </div>
             </div>
 
+            <div class="mb-3">
+                <label for="programsStudentLabel" class="form-label">Program:</label>
+                <select class="form-select" id="selectedProgramStudent">
+                    ${generateOptionsForm(programsList, "id", "name", 1)}
+                </select>
+            </div>
+
             <button type="button" class="btn btn-primary" onclick="createStudent()">Create Student</button>
             <button type="button" class="btn btn-danger" onclick="showListStudents()">Show List of Students</button>
         </form>
@@ -90,6 +97,7 @@ const createStudent=async()=>{
     const addressStudentInput=document.getElementById('addressStudentInput').value;
     const phoneNumberStudentInput=document.getElementById('phoneNumberStudentInput').value;
     const dateBornStudentInput=document.getElementById('dateBornStudentInput').value;
+    const programStudentInput = document.getElementById('selectedProgramStudent').value;
 
     // get the value about checkbox - document type
     const optionsDocumentTypeStudent=document.getElementsByName('documentTypeOptionsStudent');
@@ -123,7 +131,7 @@ const createStudent=async()=>{
         phone_number: phoneNumberStudentInput,
         date_born: dateBornStudentInput,
         sex: sexStudentInput,
-        program_id: 1,
+        program_id: parseInt(programStudentInput),
     }
 
     await saveJson("students", newStudent, "STUDENT");
@@ -138,6 +146,7 @@ const createStudent=async()=>{
     phoneNumberStudentInput.value='';
     dateBornStudentInput.value='';
     sexStudentInput.value='';
+    programStudentInput.value='';
     
     alert("Student succesfuly created");
 
