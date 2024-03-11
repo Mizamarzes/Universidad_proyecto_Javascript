@@ -153,6 +153,7 @@ const createAsignature = async () => {
         "code": codeAsignature,
         "credits": creditsAsignature,
         "teacher_id": teacherAsignatureId,
+        "available_quotas": availableQuotasAsignature,
         "program_id": programAsignatureId,
         "class_schedule": listClassesScheduleAsignatures
     };
@@ -174,36 +175,28 @@ const createAsignature = async () => {
 
 // ------------- SHOW LIST OF ASIGNATURES --------------------------
 
-const showListAsignatures = async () => {
-    await loadJson("asignatures", asignaturesList, "ASIGNATURES");
-    const listAsignatures = document.getElementById("show-info");
-
-    const ul = document.createElement('ul');
-
-    for (const asignature of asignaturesList) {
-        const li = document.createElement('li');
-        let classScheduleText = "class schedule: ";
-        
-        if (asignature.class_schedule.length > 0) {
-
-            const schedules = asignature.class_schedule.map(schedule => {
-                return `Day: ${schedule.day}, Start Time: ${schedule.start_time}, End Time: ${schedule.end_time}, Salon ID: ${schedule.salon_id}--------`;
-            });
-            classScheduleText += schedules.join('; '); // Unir los horarios con un punto y coma
-        } else {
-            classScheduleText += "No class schedule available";
-        }
-
-        li.textContent = `
-            id: ${asignature.id}, course'id: ${asignature.course_id}, code: ${asignature.code},
-            credits: ${asignature.credits}, teacher'id: ${asignature.teacher_id},
-            available quotas: ${asignature.available_quotas}, program'id: ${asignature.program_id},
-            ${classScheduleText}
-        `;
-
-        ul.appendChild(li);
-    }
-
-    listAsignatures.innerHTML = '';
-    listAsignatures.appendChild(ul);
+const showListAsignatures =() => {
+    const textAsignatures = document.getElementById('show-info');
+    textAsignatures.innerHTML=`
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Course ID</th>
+                        <th>Code</th>
+                        <th>Credits</th>
+                        <th>Teacher ID</th>
+                        <th>Available Quotas</th>
+                        <th>Program ID</th>
+                        <th>Class Schedule</th>
+                    </tr>
+                </thead>
+                <tbody id="asignaturesTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    `;
+    showListInTable("asignatures", asignaturesList, "asignaturesTableBody", fieldsAsignatures);
 }

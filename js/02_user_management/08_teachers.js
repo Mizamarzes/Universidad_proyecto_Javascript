@@ -62,6 +62,15 @@ const createTeacher=async()=>{
     const optionsDocumentTypeTeacher=document.getElementsByName('documentTypeOptionsTeacher');
     const documentTypeTeacherInput= getCheckboxSelected(optionsDocumentTypeTeacher);
 
+    if (!nameTeacherInput ||
+        !lastNameTeacherInput ||
+        !documentNumberTeacherInput ||
+        !departmentTeacher ||
+        !documentTypeTeacherInput) {
+        alert("Please, fill out all fields");
+        return;
+    }
+
     const newTeacher={
         id: teachersList.length+1,
         document_type: documentTypeTeacherInput,
@@ -85,7 +94,7 @@ const createTeacher=async()=>{
 
 // ------------- SHOW LIST OF TEACHERS --------------------------
 
-const showListTeachers=async()=>{
+const showListTeachers=()=>{
     const textTeachers = document.getElementById('show-info');
     textTeachers.innerHTML=`
         <div class="container">

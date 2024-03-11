@@ -99,6 +99,19 @@ const createStudent=async()=>{
     const optionsSex=document.getElementsByName('sexOptions');
     const sexStudentInput= getCheckboxSelected(optionsSex);
 
+    if (!nameStudentInput ||
+        !lastNameStudentInput ||
+        !documentNumberStudentInput ||
+        !cityResidenceStudentInput ||
+        !addressStudentInput ||
+        !phoneNumberStudentInput ||
+        !dateBornStudentInput ||
+        !documentTypeStudentInput ||
+        !sexStudentInput) {
+        alert("Please, fill out all fields");
+        return;
+    }
+
     const newStudent={
         id: studentsList.length+1,
         name: nameStudentInput,
@@ -132,7 +145,7 @@ const createStudent=async()=>{
 
 // ------------- SHOW LIST OF STUDENTS --------------------------
 
-const showListStudents=async()=>{
+const showListStudents=()=>{
     const textStudents = document.getElementById('show-info');
     textStudents.innerHTML=`
         <div class="container">

@@ -121,22 +121,25 @@ const createMatriculate=()=> {
 
 // ------------- SHOW LIST OF MATRICULATES --------------------------
 
-const showListMatriculates=async()=>{
-    await loadJson("matriculates", matriculatesList, "MATRICULATES");
-    const listMatriculates=document.getElementById("show-info");
-    
-    const ul=document.createElement('ul');
-
-    for(const matriculate of matriculatesList){
-        const li=document.createElement('li');
-        li.textContent= `
-            id: ${matriculate.id}, student'id: ${matriculate.student_id}, 
-            asignature'id: ${matriculate.asignature_id}, period'id: ${matriculate.period_id}, 
-            price: ${matriculate.price}
-            `;
-        ul.appendChild(li);
-    }
-
-    listMatriculates.innerHTML='';
-    listMatriculates.appendChild(ul);
+const showListMatriculates=()=>{
+    const textMatriculates = document.getElementById('show-info');
+    textMatriculates.innerHTML=`
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student'Id</th>
+                        <th>Asignature'Id</th>
+                        <th>Period'Id</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="matriculatesTableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    `;
+    showListInTable("matriculates", matriculatesList, "matriculatesTableBody", fieldsMatriculates);
 }

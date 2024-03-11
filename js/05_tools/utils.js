@@ -58,10 +58,15 @@ const fieldsCourses =["id", "name", "code", "chair_guide"];
 const fieldsSalons =[
     "id", "student_capacity", "building", "floor", "identification_number"
 ];
-const fieldsAsignatures =[];
+const fieldsAsignatures =[
+    "id", "course_id", "code", "credits", "teacher_id", "available_quotas", 
+    "program_id", "class_schedule"
+];
 const fieldsMatriculates = [
     "id", "student_id", "asignature_id", "period_id", "price"
 ];
+
+// without list
 
 const showListInTable = async (url, dataList, tableBodyId, fields) => {
     await loadJson(url, dataList, "LISTA");
@@ -72,7 +77,16 @@ const showListInTable = async (url, dataList, tableBodyId, fields) => {
         const tr = document.createElement('tr');
         let rowData = '';
         for (const field of fields) {
-            rowData += `<td>${dataItem[field]}</td>`;
+            if (field === 'class_schedule') {
+                // Procesar el campo class_schedule
+                let scheduleStr = '';
+                for (const schedule of dataItem[field]) {
+                    scheduleStr += `${schedule.day} ${schedule.start_time}-${schedule.end_time} (Salon ${schedule.salon_id})<br>`;
+                }
+                rowData += `<td>${scheduleStr}</td>`;
+            } else {
+                rowData += `<td>${dataItem[field]}</td>`;
+            }
         }
         tr.innerHTML = rowData;
         tableBody.appendChild(tr);

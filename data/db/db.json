@@ -137,6 +137,19 @@
       "date_born": "2131-03-12",
       "sex": "male",
       "program_id": 1
+    },
+    {
+      "id": 5,
+      "name": "PANAMA",
+      "last_name": "asdada",
+      "document_type": "TI",
+      "document_number": "1313123",
+      "city_of_residence": "asddads",
+      "address": "asdasd",
+      "phone_number": "21421",
+      "date_born": "4214-02-14",
+      "sex": "female",
+      "program_id": 1
     }
   ],
   "courses": [
@@ -275,18 +288,25 @@
       "price": 4000
     },
     {
-      "id": 2,
+      "id": "2",
       "student_id": "2",
       "asignature_id": "2",
       "period_id": "1",
       "price": 3300
     },
     {
-      "id": 3,
+      "id": "3",
       "student_id": "2",
       "asignature_id": "2",
       "period_id": "1",
       "price": 3300
+    },
+    {
+      "id": 4,
+      "student_id": "2",
+      "asignature_id": "1",
+      "period_id": "1",
+      "price": 4000
     }
   ],
   "schedules": [
